@@ -1,0 +1,262 @@
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from <top (required)> at /home/kevin/vinova/rails_project/rails30_apps/demo/config/environment.rb:5)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-14 10:50:28 +0700
+  Processing by ProductsController#index as HTML
+ERROR: compiling _app_views_products_index_html_erb___388622116_91493820_89867358 RAISED /home/kevin/vinova/rails_project/rails30_apps/demo/app/views/products/index.html.erb:35: syntax error, unexpected keyword_ensure, expecting keyword_end
+/home/kevin/vinova/rails_project/rails30_apps/demo/app/views/products/index.html.erb:37: syntax error, unexpected $end, expecting keyword_end
+Function body:           def _app_views_products_index_html_erb___388622116_91493820_89867358(local_assigns)
+            _old_virtual_path, @_virtual_path = @_virtual_path, "products/index";_old_output_buffer = @output_buffer;;@output_buffer = ActionView::OutputBuffer.new;@output_buffer.safe_concat('<h1>Listing products</h1>
+
+<table id="tables">
+  <tr>
+    <th>Name</th>
+    <th>Price</th>
+    <th>Released on</th>
+    <th>Category</th>
+    <th>Rating</th>
+    <th>Discontinued</th>
+    <th></th>
+    <th>Actions</th>
+    <th></th>
+  </tr>
+
+');@output_buffer.append_if_string=  @products.each do |product| 
+@output_buffer.safe_concat('  <tr>
+    <td>');@output_buffer.append= ( product.name );@output_buffer.safe_concat('</td>
+    <td>');@output_buffer.append= ( product.price );@output_buffer.safe_concat('</td>
+    <td>');@output_buffer.append= ( product.released_on );@output_buffer.safe_concat('</td>
+    <td>'); unless(product.category.nil?);@output_buffer.safe_concat(' ');@output_buffer.append= ( product.category.name );@output_buffer.safe_concat('</td>
+    <td>');@output_buffer.append= ( product.rating );@output_buffer.safe_concat('</td>
+    <td>'); if(product.discontinued) ;@output_buffer.safe_concat(' yes '); else ;@output_buffer.safe_concat(' no '); end ;@output_buffer.safe_concat('</td>
+    <td>');@output_buffer.append= ( link_to 'Show', product );@output_buffer.safe_concat('</td>
+    <td>');@output_buffer.append= ( link_to 'Edit', edit_product_path(product) );@output_buffer.safe_concat('</td>
+    <td>');@output_buffer.append= ( link_to 'Destroy', product, :confirm => 'Are you sure?', :method => :delete );@output_buffer.safe_concat('</td>
+  </tr>
+'); end 
+@output_buffer.safe_concat('</table>
+
+<br />
+
+');@output_buffer.append= ( link_to 'New Product', new_product_path );@output_buffer.safe_concat('
+');@output_buffer.to_s
+          ensure
+            @_virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+Backtrace: /home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/action_view/template.rb:258:in `module_eval'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/action_view/template.rb:258:in `compile'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/action_view/template.rb:134:in `block in render'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/activesupport-3.0.9/lib/active_support/notifications.rb:54:in `instrument'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/action_view/template.rb:127:in `render'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/action_view/render/rendering.rb:59:in `block in _render_template'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/activesupport-3.0.9/lib/active_support/notifications.rb:52:in `block in instrument'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/activesupport-3.0.9/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/activesupport-3.0.9/lib/active_support/notifications.rb:52:in `instrument'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/action_view/render/rendering.rb:56:in `_render_template'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/action_view/render/rendering.rb:26:in `render'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/abstract_controller/rendering.rb:115:in `_render_template'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/abstract_controller/rendering.rb:109:in `render_to_body'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/action_controller/metal/renderers.rb:47:in `render_to_body'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/action_controller/metal/compatibility.rb:55:in `render_to_body'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/abstract_controller/rendering.rb:102:in `render_to_string'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/abstract_controller/rendering.rb:93:in `render'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/action_controller/metal/rendering.rb:17:in `render'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/activesupport-3.0.9/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+/home/kevin/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/benchmark.rb:310:in `realtime'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/activesupport-3.0.9/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/action_controller/metal/instrumentation.rb:78:in `cleanup_view_runtime'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/activerecord-3.0.9/lib/active_record/railties/controller_runtime.rb:15:in `cleanup_view_runtime'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/action_controller/metal/mime_responds.rb:261:in `block in retrieve_response_from_mimes'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/action_controller/metal/responder.rb:190:in `call'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/action_controller/metal/responder.rb:190:in `default_render'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/action_controller/metal/responder.rb:126:in `to_html'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/responders-0.6.4/lib/responders/flash_responder.rb:93:in `to_html'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/action_controller/metal/responder.rb:119:in `respond'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/action_controller/metal/responder.rb:112:in `call'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/action_controller/metal/mime_responds.rb:232:in `respond_with'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/inherited_resources-1.2.2/lib/inherited_resources/actions.rb:7:in `index'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/abstract_controller/base.rb:150:in `process_action'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/action_controller/metal/rendering.rb:11:in `process_action'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/activesupport-3.0.9/lib/active_support/callbacks.rb:436:in `_run__86201820__process_action__243404065__callbacks'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/activesupport-3.0.9/lib/active_support/callbacks.rb:410:in `_run_process_action_callbacks'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/activesupport-3.0.9/lib/active_support/callbacks.rb:94:in `run_callbacks'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/activesupport-3.0.9/lib/active_support/notifications.rb:52:in `block in instrument'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/activesupport-3.0.9/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/activesupport-3.0.9/lib/active_support/notifications.rb:52:in `instrument'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/action_controller/metal/rescue.rb:17:in `process_action'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/abstract_controller/base.rb:119:in `process'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/abstract_controller/rendering.rb:41:in `process'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/action_controller/metal.rb:138:in `dispatch'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/action_controller/metal.rb:178:in `block in action'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/action_dispatch/routing/route_set.rb:62:in `call'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/action_dispatch/routing/route_set.rb:62:in `dispatch'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/action_dispatch/routing/route_set.rb:27:in `call'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/rack-mount-0.6.14/lib/rack/mount/route_set.rb:148:in `block in call'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:93:in `block in recognize'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:68:in `optimized_each'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:92:in `recognize'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/rack-mount-0.6.14/lib/rack/mount/route_set.rb:139:in `call'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/action_dispatch/routing/route_set.rb:493:in `call'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/warden-1.0.5/lib/warden/manager.rb:35:in `block in call'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/warden-1.0.5/lib/warden/manager.rb:34:in `catch'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/warden-1.0.5/lib/warden/manager.rb:34:in `call'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/action_dispatch/middleware/head.rb:14:in `call'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/rack-1.2.3/lib/rack/methodoverride.rb:24:in `call'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/action_dispatch/middleware/flash.rb:182:in `call'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/action_dispatch/middleware/session/abstract_store.rb:149:in `call'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/action_dispatch/middleware/cookies.rb:302:in `call'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/activerecord-3.0.9/lib/active_record/query_cache.rb:32:in `block in call'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/activerecord-3.0.9/lib/active_record/connection_adapters/abstract/query_cache.rb:28:in `cache'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/activerecord-3.0.9/lib/active_record/query_cache.rb:12:in `cache'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/activerecord-3.0.9/lib/active_record/query_cache.rb:31:in `call'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/activerecord-3.0.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:354:in `call'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/action_dispatch/middleware/callbacks.rb:46:in `block in call'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/activesupport-3.0.9/lib/active_support/callbacks.rb:416:in `_run_call_callbacks'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/action_dispatch/middleware/callbacks.rb:44:in `call'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/rack-1.2.3/lib/rack/sendfile.rb:107:in `call'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/action_dispatch/middleware/show_exceptions.rb:47:in `call'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/railties-3.0.9/lib/rails/rack/logger.rb:13:in `call'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/rack-1.2.3/lib/rack/runtime.rb:17:in `call'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/activesupport-3.0.9/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/rack-1.2.3/lib/rack/lock.rb:11:in `block in call'
+<internal:prelude>:10:in `synchronize'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/rack-1.2.3/lib/rack/lock.rb:11:in `call'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/action_dispatch/middleware/static.rb:30:in `call'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/railties-3.0.9/lib/rails/application.rb:168:in `call'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/railties-3.0.9/lib/rails/application.rb:77:in `method_missing'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/railties-3.0.9/lib/rails/rack/log_tailer.rb:14:in `call'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/rack-1.2.3/lib/rack/content_length.rb:13:in `call'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/rack-1.2.3/lib/rack/handler/webrick.rb:52:in `service'
+/home/kevin/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+/home/kevin/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+/home/kevin/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+Rendered products/index.html.erb within layouts/application (66.5ms)
+Completed 500 Internal Server Error in 207ms
+
+ActionView::Template::Error (/home/kevin/vinova/rails_project/rails30_apps/demo/app/views/products/index.html.erb:35: syntax error, unexpected keyword_ensure, expecting keyword_end
+/home/kevin/vinova/rails_project/rails30_apps/demo/app/views/products/index.html.erb:37: syntax error, unexpected $end, expecting keyword_end):
+    32: 
+    33: <%= link_to 'New Product', new_product_path %>
+  
+
+Rendered /home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+  [1m[36mProduct Load (9.9ms)[0m  [1mSELECT `products`.* FROM `products`[0m
+Rendered /home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (34.9ms)
+Rendered /home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (41.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-14 10:51:03 +0700
+  Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.2ms)[0m  SELECT `products`.* FROM `products`
+  [1m[36mSQL (0.6ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mCategory Load (0.4ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 2 LIMIT 1
+  [1m[36mCategory Load (0.5ms)[0m  [1mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1
+Rendered products/index.html.erb within layouts/application (145.3ms)
+Completed 200 OK in 155ms (Views: 152.5ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/products/new" for 127.0.0.1 at 2011-08-14 10:51:11 +0700
+  Processing by ProductsController#new as HTML
+Completed   in 41ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2011-08-14 10:51:11 +0700
+  Processing by Devise::SessionsController#new as HTML
+Rendered /home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/devise-1.4.2/app/views/devise/shared/_links.erb (1.9ms)
+Rendered /home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/devise-1.4.2/app/views/devise/sessions/new.html.erb within layouts/application (13.3ms)
+Completed 200 OK in 47ms (Views: 21.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2011-08-14 10:51:13 +0700
+  Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6m+o5JudNiwO0yZIqr7N0AEeNtjZc4BOdgdCsuaPlFg=", "user"=>{"email"=>"kevin2@vinova.sg", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'kevin2@vinova.sg' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  BEGIN
+  [1m[36mAREL (0.5ms)[0m  [1mUPDATE `users` SET `last_sign_in_at` = '2011-08-12 15:34:44', `current_sign_in_at` = '2011-08-14 03:51:13', `sign_in_count` = 4, `updated_at` = '2011-08-14 03:51:13' WHERE `users`.`id` = 2[0m
+  [1m[35mSQL (7.9ms)[0m  COMMIT
+Redirected to http://localhost:3000/products/new
+Completed 302 Found in 245ms
+
+
+Started GET "/products/new" for 127.0.0.1 at 2011-08-14 10:51:13 +0700
+  Processing by ProductsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  [1m[35mCategory Load (0.3ms)[0m  SELECT `categories`.* FROM `categories`
+Rendered products/_form.html.erb (498.9ms)
+Rendered products/new.html.erb within layouts/application (504.5ms)
+Completed 200 OK in 553ms (Views: 521.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2011-08-14 10:51:26 +0700
+  Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT `products`.* FROM `products`[0m
+  [1m[35mCategory Load (0.2ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 2 LIMIT 1
+  [1m[36mCategory Load (0.1ms)[0m  [1mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+Rendered products/index.html.erb within layouts/application (79.6ms)
+Completed 200 OK in 89ms (Views: 87.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2011-08-14 10:51:30 +0700
+  Processing by CategoriesController#index as HTML
+  [1m[35mCategory Load (0.2ms)[0m  SELECT `categories`.* FROM `categories`
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+Rendered categories/index.html.erb within layouts/application (80.0ms)
+Completed 200 OK in 90ms (Views: 88.4ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/categories/2" for 127.0.0.1 at 2011-08-14 10:51:34 +0700
+  Processing by CategoriesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"6m+o5JudNiwO0yZIqr7N0AEeNtjZc4BOdgdCsuaPlFg=", "id"=>"2"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1
+  [1m[36mCategory Load (0.1ms)[0m  [1mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 2 LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mAREL (0.3ms)[0m  [1mDELETE FROM `categories` WHERE `categories`.`id` = 2[0m
+  [1m[35mSQL (29.4ms)[0m  COMMIT
+Redirected to http://localhost:3000/categories
+Completed 302 Found in 79ms
+
+
+Started GET "/categories" for 127.0.0.1 at 2011-08-14 10:51:35 +0700
+  Processing by CategoriesController#index as HTML
+  [1m[36mCategory Load (0.3ms)[0m  [1mSELECT `categories`.* FROM `categories`[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1
+Rendered categories/index.html.erb within layouts/application (79.7ms)
+Completed 200 OK in 90ms (Views: 88.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2011-08-14 10:51:37 +0700
+  Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT `products`.* FROM `products`[0m
+  [1m[35mCategory Load (0.4ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 2 LIMIT 1
+  [1m[36mCategory Load (0.4ms)[0m  [1mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+Rendered products/index.html.erb within layouts/application (81.2ms)
+Completed 200 OK in 91ms (Views: 89.0ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2011-08-14 10:52:35 +0700
+  Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.2ms)[0m  SELECT `products`.* FROM `products`
+  [1m[36mCategory Load (0.1ms)[0m  [1mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 2 LIMIT 1[0m
+  [1m[35mCategory Load (0.3ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1
+Rendered products/index.html.erb within layouts/application (112.7ms)
+Completed 200 OK in 123ms (Views: 120.8ms | ActiveRecord: 0.8ms)
