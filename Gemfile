@@ -12,6 +12,20 @@ gem 'has_scope'
 gem 'nifty-generators'
 gem 'simple_form'
 
+group :development do
+  gem 'rspec'
+  gem 'rspec-rails'
+end
+
+group :test do
+  gem 'rspec'
+  gem 'nokogiri'
+  gem 'rspec-rails'
+  gem 'spork'
+  gem 'factory_girl'
+  gem 'factory_girl_rails'
+end
+
 # Use unicorn as the web server
 # gem 'unicorn'
 
