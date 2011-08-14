@@ -1635,3 +1635,37 @@ Started GET "/categories" for 127.0.0.1 at 2011-08-14 22:50:31 +0700
   [1m[36mCategory Load (0.3ms)[0m  [1mSELECT `categories`.* FROM `categories`[0m
 Rendered categories/index.html.erb within layouts/application (13.4ms)
 Completed 200 OK in 137ms (Views: 22.0ms | ActiveRecord: 0.3ms)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from <top (required)> at /home/kevin/vinova/rails_project/rails30_apps/demo/config/environment.rb:5)
+
+
+Started GET "/products/new" for 127.0.0.1 at 2011-08-14 23:00:43 +0700
+  Processing by ProductsController#new as HTML
+Completed   in 1ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2011-08-14 23:00:44 +0700
+  Processing by Devise::SessionsController#new as HTML
+Rendered /home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/devise-1.4.2/app/views/devise/shared/_links.erb (2.3ms)
+Rendered /home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/devise-1.4.2/app/views/devise/sessions/new.html.erb within layouts/application (20.9ms)
+Completed 200 OK in 61ms (Views: 31.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2011-08-14 23:00:45 +0700
+  Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+s+wObsGniWfXSZeP5hhHsb3j4datHUolv35iAVKQ9g=", "user"=>{"email"=>"kevin2@vinova.sg", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[36mSQL (0.6ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mUser Load (0.7ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`email` = 'kevin2@vinova.sg' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.6ms)[0m  UPDATE `users` SET `last_sign_in_at` = '2011-08-14 07:57:41', `current_sign_in_at` = '2011-08-14 16:00:46', `sign_in_count` = 6, `updated_at` = '2011-08-14 16:00:46' WHERE `users`.`id` = 2
+  [1m[36mSQL (8.3ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/products/new
+Completed 302 Found in 566ms
+
+
+Started GET "/products/new" for 127.0.0.1 at 2011-08-14 23:00:46 +0700
+  Processing by ProductsController#new as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1
+  [1m[36mCategory Load (0.3ms)[0m  [1mSELECT `categories`.* FROM `categories`[0m
+Rendered products/_form.html.erb (533.4ms)
+Rendered products/new.html.erb within layouts/application (539.0ms)
+Completed 200 OK in 587ms (Views: 556.9ms | ActiveRecord: 0.6ms)
