@@ -1627,3 +1627,11 @@ Started GET "/products" for 127.0.0.1 at 2011-08-14 22:45:31 +0700
   [1m[35mCACHE (0.0ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1
 Rendered products/index.html.erb within layouts/application (66.0ms)
 Completed 200 OK in 76ms (Views: 74.6ms | ActiveRecord: 0.5ms)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from <top (required)> at /home/kevin/vinova/rails_project/rails30_apps/demo/config/environment.rb:5)
+
+
+Started GET "/categories" for 127.0.0.1 at 2011-08-14 22:50:31 +0700
+  Processing by CategoriesController#index as HTML
+  [1m[36mCategory Load (0.3ms)[0m  [1mSELECT `categories`.* FROM `categories`[0m
+Rendered categories/index.html.erb within layouts/application (13.4ms)
+Completed 200 OK in 137ms (Views: 22.0ms | ActiveRecord: 0.3ms)
