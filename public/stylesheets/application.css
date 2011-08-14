@@ -44,13 +44,13 @@ body, p, ol, ul, td{
   padding: 5px 8px 5px 0; 
 }
 #banner .header-top {
-width: 100%;
+width: 965px;
 height: 103px;
 float: left;
 }
 #banner .header-main {
 background: #F97D3B url(/images/header/bg-menu.png) repeat-x top;
-width: 100%;
+width: 965px;
 height: 43px;
 float: left;
 }
@@ -144,8 +144,8 @@ div.field, div.actions {
 
 
 #container {
-  /*width: 75%;*/
-  margin: 0 auto;
+  width: 965px;
+  margin: auto;
   background-color: #FFF;
   padding: 20px 40px;
   border: solid 1px black;
