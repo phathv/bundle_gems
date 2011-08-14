@@ -7,21 +7,61 @@
   <%= csrf_meta_tag %>
 </head>
 <body>
-<div id="container">
-  
-  <div id="user_nav">
-  <% if user_signed_in?  %>
-   Sign in as <%= current_user.email %>. Not you?
-   <%= link_to "Sign out", destroy_user_session_path, :method => 'DELETE' %>
-  <% else %>
-   <%= link_to "Sign up", new_user_registration_path %> or <%= link_to "sign in ", new_user_session_path %>
-  <% end %>  
-  </div>
-  <div class="menu">
-    <%= link_to 'Product', products_path %>|
-    <%= link_to 'Category', categories_path %>
-  </div>
-<%= yield %>
-</div>
+  <table class="home-no-log-in"
+        border="0"
+        cellpadding="0"
+        cellspacing="0"
+        vspace="0"
+        width="100%"
+        style="margin-top:-15px"> 
+  <tr id="main_content">
+    <td class="home_bg_left">
+      <div id="left_module">
+      </div>
+    </td>
+    <td class="home_main">
+      <div id="banner">
+        <div class="header-top">
+        <div id="user_nav">
+          <% if user_signed_in?  %>
+           Sign in as <%= current_user.email %>. Not you?
+           <%= link_to "Sign out", destroy_user_session_path, :method => 'DELETE' %>
+          <% else %>
+           <%= link_to "Sign up", new_user_registration_path %> or <%= link_to "sign in ", new_user_session_path %>
+          <% end %>  
+        </div>
+        </div>
+        <div class="header-main">
+        <div id="menubar">
+          <div id="menu-items">
+            <ul>
+              <li><%= link_to 'Product', products_path %>|</li>
+              <li><%= link_to 'Category', categories_path %></li>
+            </ul>
+          </div>
+        </div>
+        </div>
+      </div>
+      <div id="container">          
+        <%= yield %>
+      </div>
+    </td>
+    <td class="home_bg_right">
+      <div id="right_module">
+      </div>
+    </td>
+  </tr>
+  <tr >
+    <td>
+    </td>
+    <td id="footer" class="footer-main">
+    <div >
+      Copyright@2011 by Kevin
+    </div>
+    </td>
+    <td>
+    </td>
+  </tr>
+  </table>
 </body>
 </html>

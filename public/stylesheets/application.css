@@ -8,6 +8,61 @@ body, p, ol, ul, td{
   font-size:   13px;
   line-height: 18px;
 }
+.home_main{
+  width: 965px;
+  vertical-align:top;
+  align: center;
+  margin-left:auto;
+  margin-right:auto;
+}
+.home_bg_left{
+  width: 15%;
+  vertical-align:top;
+  margin-left: 0px;
+}
+.home_bg_right{
+  width: 15%;
+  vertical-align:top;
+  margin-right: 0px;
+}
+#banner {
+  background: black url(/images/header/header.jpg?) repeat-x;
+  width: 965px;
+  height: 103px;
+  align:center;
+}
+#footer{
+  width: auto;
+  height:100px;
+  
+}
+#user_nav{
+  float: right;
+  font-family: tahoma;
+  font-size: 10pt;
+  color: white;
+  padding: 5px 8px 5px 0; 
+}
+#banner .header-top {
+width: 100%;
+height: 103px;
+float: left;
+}
+#banner .header-main {
+background: #F97D3B url(/images/header/bg-menu.png) repeat-x top;
+width: 100%;
+height: 43px;
+float: left;
+}
+#menubar {
+  width: 965px;
+  height: 45px;
+}
+#menubar ul, li{
+  display: block;
+  float: left;  
+}
+
 #tables {
   font-family: verdana, arial, helvetica, sans-serif;
   font-size:   13px;
@@ -17,6 +72,13 @@ body, p, ol, ul, td{
   border: solid;
   text-align: center;
 }
+.footer-main{  
+  text-align:center;
+  margin-left:auto;
+  margin-right:auto;
+  width:50%;
+}
+
 a img {
   border: none;
 }
@@ -82,7 +144,7 @@ div.field, div.actions {
 
 
 #container {
-  width: 75%;
+  /*width: 75%;*/
   margin: 0 auto;
   background-color: #FFF;
   padding: 20px 40px;
