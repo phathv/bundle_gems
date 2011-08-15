@@ -1,8 +1,5 @@
-require 'test_helper'
+require 'spec_helper'
 
-class ProductTest < ActiveSupport::TestCase
-  # Replace this with your real tests.
-  test "the truth" do
-    assert true
-  end
+describe Product do
+  pending "add some examples to (or delete) #{__FILE__}"
 end

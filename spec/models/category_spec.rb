@@ -1,8 +1,5 @@
-require 'test_helper'
+require 'spec_helper'
 
-class CategoryTest < ActiveSupport::TestCase
-  # Replace this with your real tests.
-  test "the truth" do
-    assert true
-  end
+describe Category do
+  pending "add some examples to (or delete) #{__FILE__}"
 end
