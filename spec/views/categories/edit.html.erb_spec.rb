@@ -1,6 +1,18 @@
-<h1>Editing category</h1>
+require 'spec_helper'
 
-<%= render 'form' %>
+describe "categories/edit.html.erb" do
+  before(:each) do
+    @category = assign(:category, stub_model(Category,
+      :name => "MyString"
+    ))
+  end
 
-<%= link_to 'Show', @category %> |
-<%= link_to 'Back', categories_path %>
+  it "renders the edit category form" do
+    render
+
+    # Run the generator again with the --webrat flag if you want to use webrat matchers
+    #assert_select "form", :action => categories_path(@category), :method => "post" do
+     # assert_select "input#category_name", :name => "category[name]"
+   # end
+  end
+end

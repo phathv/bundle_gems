@@ -1,23 +1,20 @@
-<h1>Listing categories</h1>
+require 'spec_helper'
 
-<table id="tables" >
-  <tr>
-    <th>Name</th>
-    <th></th>
-    <th>Actions</th>
-    <th></th>
-  </tr>
+describe "categories/index.html.erb" do
+  before(:each) do
+    assign(:categories, [
+      stub_model(Category,
+        :name => "Name"
+      ),
+      stub_model(Category,
+        :name => "Name"
+      )
+    ])
+  end
 
-<% @categories.each do |category| %>
-  <tr>
-    <td><%= category.name %></td>
-    <td><%= link_to 'Show', category %></td>
-    <td><%= link_to 'Edit', edit_category_path(category) %></td>
-    <td><%= link_to 'Destroy', category, :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
-<% end %>
-</table>
-
-<br />
-
-<%= link_to 'New Category', new_category_path %>
+  it "renders a list of categories" do
+    render
+    # Run the generator again with the --webrat flag if you want to use webrat matchers
+    #assert_select "tr>td", :text => "Name".to_s, :count => 2
+  end
+end

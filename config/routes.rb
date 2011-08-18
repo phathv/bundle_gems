@@ -1,9 +1,10 @@
 Demo::Application.routes.draw do
-  resources :comments
+  
 
   devise_for :users
-
-  resources :products
+  resources :products do
+    resources :comments
+  end
 
   resources :categories
   root :to => "products#index"

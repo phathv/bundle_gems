@@ -11,6 +11,7 @@ gem 'inherited_resources'
 gem 'has_scope'
 gem 'nifty-generators'
 gem 'simple_form'
+gem 'jquery-rails'
 
 group :development do
   gem 'rspec'
@@ -26,6 +27,11 @@ group :test do
   gem 'factory_girl_rails'
   gem "capybara"
   gem "guard-rspec"
+  gem 'webrat'
+  gem 'cucumber'
+  gem 'cucumber-rails'
+  gem 'database_cleaner'
+  gem "remarkable_activerecord"
 end
 #  gem "guard-rspec"
 # Use unicorn as the web server

@@ -1,35 +1,27 @@
-<p id="notice"><%= notice %></p>
+require 'spec_helper'
 
-<p>
-  <b>Name:</b>
-  <%= @product.name %>
-</p>
+describe "products/show.html.erb" do
+  before(:each) do
+    @product = assign(:product, stub_model(Product,
+      :name => "Name",
+      :price => "9.99",
+      :category_id => 1,
+      :rating => 1,
+      :discontinued => false
+    ))
+  end
 
-<p>
-  <b>Price:</b>
-  <%= @product.price %>
-</p>
-
-<p>
-  <b>Released on:</b>
-  <%= @product.released_on %>
-</p>
-
-<p>
-  <b>Category:</b>
-  <%= @product.category_id %>
-</p>
-
-<p>
-  <b>Rating:</b>
-  <%= @product.rating %>
-</p>
-
-<p>
-  <b>Discontinued:</b>
-  <%= @product.discontinued %>
-</p>
-
-
-<%= link_to 'Edit', edit_product_path(@product) %> |
-<%= link_to 'view all', products_path %>
+  it "renders attributes in <p>" do
+    render
+    # Run the generator again with the --webrat flag if you want to use webrat matchers
+    rendered.should match(/Name/)
+    # Run the generator again with the --webrat flag if you want to use webrat matchers
+    rendered.should match(/9/)
+    # Run the generator again with the --webrat flag if you want to use webrat matchers
+    rendered.should match(/1/)
+    # Run the generator again with the --webrat flag if you want to use webrat matchers
+    rendered.should match(/1/)
+    # Run the generator again with the --webrat flag if you want to use webrat matchers
+    rendered.should match(/false/)
+  end
+end

@@ -112,8 +112,9 @@ float: left;
 #user_nav{
   float: right;
   font-family: tahoma;
-  font-size: 10pt;
-  color: white;
+  font-size: 11pt;
+  
+  color: blue;
   padding: 5px 8px 5px 0; 
 }
 #menubar {
@@ -125,7 +126,7 @@ float: left;
   float: left;  
 }
 
-#index-items {
+.index-items {
   font-family: verdana, arial, helvetica, sans-serif;
   font-size:   13px;
   line-height: 18px;
@@ -133,9 +134,10 @@ float: left;
   margin-right: auto;
   
 }
-#index-items td, tr {  
+.index-items td, tr {  
   border: solid;
   text-align: center;
+  
 }
 #container {
   background-color: #FFF;
@@ -156,6 +158,11 @@ float: left;
   width:50%;
 }
 
+.show-item{
+  margin-left:auto;
+  margin-right:auto;
+  
+}
 #flash_notice, #flash_error, #flash_alert {
   padding: 5px 8px;
   margin: 10px 0;
@@ -248,4 +255,18 @@ float: left;
   color: #555;
   display: block;
   font-style: italic;
+}
+
+.comment
+{
+  display: block;
+  background: #E5EEED;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+}
+#comment_content textarea{
+  
 }

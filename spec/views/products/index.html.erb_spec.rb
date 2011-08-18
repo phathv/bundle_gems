@@ -1,34 +1,36 @@
-<h1>Listing products</h1>
+require 'spec_helper'
 
-<table id="tables">
-  <tr>
-    <th>Name</th>
-    <th>Price</th>
-    <th>Released on</th>
-    <th>Category</th>
-    <th>Rating</th>
-    <th>Discontinued</th>
-    <th></th>
-    <th>Actions</th>
-    <th></th>
-  </tr>
+describe "products/index.html.erb" do
+  before(:each) do
+    assign(:products, [
+      stub_model(Product,
+        :name => "Name",
+        :price => "9.99",
+        :category_id => 1,
+        :rating => 1,
+        :discontinued => false
+      ),
+      stub_model(Product,
+        :name => "Name",
+        :price => "9.99",
+        :category_id => 1,
+        :rating => 1,
+        :discontinued => false
+      )
+    ])
+  end
 
-<% @products.each do |product| %>
-  <tr>
-    <td><%= product.name %></td>
-    <td><%= product.price %></td>
-    <td><%= product.released_on %></td>
-    <td><% unless(product.category.nil?)%> <%= product.category.name %>
-      <%else%> N/A <%end %></td>
-    <td><%= product.rating %></td>
-    <td><% if(product.discontinued) %> yes <% else %> no <% end %></td>
-    <td><%= link_to 'Show', product %></td>
-    <td><%= link_to 'Edit', edit_product_path(product) %></td>
-    <td><%= link_to 'Destroy', product, :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
-<% end %>
-</table>
-
-<br />
-
-<%= link_to 'New Product', new_product_path %>
+  it "renders a list of products" do
+    render
+    # Run the generator again with the --webrat flag if you want to use webrat matchers
+    #assert_select "tr>td", :text => "Name".to_s, :count => 2
+    # Run the generator again with the --webrat flag if you want to use webrat matchers
+    #assert_select "tr>td", :text => "9.99".to_s, :count => 2
+    # Run the generator again with the --webrat flag if you want to use webrat matchers
+   # assert_select "tr>td", :text => 1.to_s, :count => 2
+    # Run the generator again with the --webrat flag if you want to use webrat matchers
+   # assert_select "tr>td", :text => 1.to_s, :count => 2
+    # Run the generator again with the --webrat flag if you want to use webrat matchers
+   # assert_select "tr>td", :text => false.to_s, :count => 2
+  end
+end

@@ -1,35 +1,42 @@
 <p id="notice"><%= notice %></p>
-
-<p>
+<table class = "show-item">
+  <tr>
+    <td>
   <b>Name:</b>
   <%= @product.name %>
-</p>
+    </td>
+    <td>
+      <b>Category:</b>
+  <% unless(@product.category.nil?)%> <%= @product.category.name %>
+      <% else %> N/A <%end %>
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+      <b>Price:</b>
+      <%= @product.price %>
+    </td>
+   <td>
+    <b>Released on:</b>
+    <%= @product.released_on %>    
+    </td>
+  </tr>  
+  <tr>
+  <td>
+    <b>Rating:</b>
+    <%= @product.rating %>  
+  </td>
+  <td>
+    <b>Discontinued:</b>
+    <%= @product.discontinued %>  
+  </td>
+  </tr>
+  <tr>
+    <td>
+    <%= link_to 'Edit', edit_product_path(@product) %> |
+    <%= link_to 'view all', products_path %>
+    </td>
+  </tr>
+</table>
 
-<p>
-  <b>Price:</b>
-  <%= @product.price %>
-</p>
-
-<p>
-  <b>Released on:</b>
-  <%= @product.released_on %>
-</p>
-
-<p>
-  <b>Category:</b>
-  <%= @product.category_id %>
-</p>
-
-<p>
-  <b>Rating:</b>
-  <%= @product.rating %>
-</p>
-
-<p>
-  <b>Discontinued:</b>
-  <%= @product.discontinued %>
-</p>
-
-
-<%= link_to 'Edit', edit_product_path(@product) %> |
-<%= link_to 'view all', products_path %>

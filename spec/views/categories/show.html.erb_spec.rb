@@ -1,10 +1,15 @@
-<p id="notice"><%= notice %></p>
+require 'spec_helper'
 
-<p>
-  <b>Name:</b>
-  <%= @category.name %>
-</p>
+describe "categories/show.html.erb" do
+  before(:each) do
+    @category = assign(:category, stub_model(Category,
+      :name => "Name"
+    ))
+  end
 
-
-<%= link_to 'Edit', edit_category_path(@category) %> |
-<%= link_to 'Back', categories_path %>
+  it "renders attributes in <p>" do
+    render
+    # Run the generator again with the --webrat flag if you want to use webrat matchers
+    #rendered.should match(/Name/)
+  end
+end
