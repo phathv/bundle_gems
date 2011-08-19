@@ -265,8 +265,41 @@ float: left;
   -webkit-border-radius: 5px;
   border-radius: 5px;
   padding: 10px;
-  margin: 10px;
+  /*margin: 10px;*/
+  margin-left: auto;
+  margin-right: auto;
 }
-#comment_content textarea{
+
+#comments ul {
+  margin-left: auto;
+  margin-right: auto;
   
+}
+#comments li {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 8px;
+  list-style: none;
+  border: 1px solid #ccc;
+  width: 400px;
+  height: 100px;
+  background: #E5EEED;
+}
+/*
+.comment{
+  text-align: center;
+  color: blue;
+  font-size: 12pt;
+}
+*/
+#comments p {
+  margin: 0;
+  font-size: 12pt;
+}
+.age {
+  font-size: 10pt;
+  text-decoration: italic;
+  margin-bottom: 8px;
+  text-align: left;
+
 }

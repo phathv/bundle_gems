@@ -1,29 +1,23 @@
-<h1>Listing comments</h1>
+<span>Comments for product <b> <%= @product.name %></b> :</span>
 
-<table class="index-items">
-  <tr>
-    <th>Content</th>
-    <th>User</th>
-    <th>Product</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
-
-<% @comments.each do |comment| %>
-  <tr>
-    <td><%= comment.content %></td>
-    <td><%= comment.user_id %></td>
-    <td><%= comment.product_id %></td>
-    <td><%= link_to 'Show', product_comment_path(comment.product, comment) %></td>
-    <td><%= link_to 'Edit', edit_product_comment_path(@product, comment) %></td>
-    <td><%= link_to 'Destroy', product_comment_path(@product, comment), :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
-<% end %>
-</table>
-<br />
-
-
-<%= link_to 'New Comment', new_product_comment_path(@product) %>
-
-<%#= render 'form' %>
+<div id="comment_form">
+  <%#= render :partial =>'form' %>
+  <%# form_for Comment.new(@product), :remote => true do |f| %>
+	<%#= f.label :product_id, "Product_id" %><br />
+	<%#= f.text_field :product_id %><br />
+	<%#= f.label :content, "Comment" %><br />
+	<%#= f.text_area :content, :rows => 6 %><br />
+	<%#= f.submit "Add comment" %>
+  <%# end %>
+  
+</div>
+<%= link_to "add comment", new_product_comment_path %>
+<div id="comment-notice"></div> <!-- flash notice -->
+<br>
+<span id="comments_count"><%= pluralize(@comments.count, "Comment") %></span>
+<div id="comments">
+<ul >
+  <%= render :partial => @comments, :locals => { :list => true } %>
+</ul>
+</div>
+<!-- render :partial =>'sth',:object => @sth co the thay bang render :partial =>@sths voi dk co file _sth.html.erb -->
