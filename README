@@ -1,5 +1,8 @@
 Demostration using jquery and gems: devise, inherited_resource, simple_form and rspec.
 This demo is followed the railscast guide line.
 
+
+Copyright (c) 2011 by Kevin
+Licensed under the MIT license.
 Contact me at kevin@vinova.sg
 website: http://vinova.sg
