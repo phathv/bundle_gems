@@ -1,10 +1,16 @@
 class CommentsController < InheritedResources::Base
   belongs_to :product #using this method when mapping in routes
-  respond_to :js, :only => [:create, :delete]
-  before_filter :authenticate_user!, :except => [:index]
+  #belongs_to :user
+  respond_to :js , :only => [:create, :destroy]
+  #before_filter :authenticate_user!, :except => [:index]
   #respond_to :html, :xml, :json
-  def create
-    create! { collection_url} #product_comments_path
+  def index
+    index!{
+      @comment = Comment.new
+      @comment.user_id = current_user.id
+    }
+   
   end
+  
   
 end

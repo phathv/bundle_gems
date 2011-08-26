@@ -4,4 +4,11 @@ module ApplicationHelper
       title
     end
   end
+  def check_logined?
+    if(user_signed_in?)
+      return true
+    else
+      return false
+    end
+  end
 end

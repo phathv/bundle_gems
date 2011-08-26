@@ -1,23 +1,15 @@
-<span>Comments for product <b> <%= @product.name %></b> :</span>
-
+<span>Leave a comment for <b> <%= @product.name %></b> :</span>
 <div id="comment_form">
-  <%#= render :partial =>'form' %>
-  <%# form_for Comment.new(@product), :remote => true do |f| %>
-	<%#= f.label :product_id, "Product_id" %><br />
-	<%#= f.text_field :product_id %><br />
-	<%#= f.label :content, "Comment" %><br />
-	<%#= f.text_area :content, :rows => 6 %><br />
-	<%#= f.submit "Add comment" %>
-  <%# end %>
-  
+  <%= render :partial =>'form' %>
 </div>
-<%= link_to "add comment", new_product_comment_path %>
-<div id="comment-notice"></div> <!-- flash notice -->
-<br>
+<div>
+<span><%= link_to 'Back to products', products_path %> </span>
+</div>
 <span id="comments_count"><%= pluralize(@comments.count, "Comment") %></span>
-<div id="comments">
-<ul >
-  <%= render :partial => @comments, :locals => { :list => true } %>
+<div id="comment-notice">
+</div> 
+<ul id="comments">
+  <%= render :partial => @comments.reverse %>
 </ul>
-</div>
-<!-- render :partial =>'sth',:object => @sth co the thay bang render :partial =>@sths voi dk co file _sth.html.erb -->
+
+<!-- , :locals => { :list => true } render :partial =>'sth',:object => @sth co the thay bang render :partial =>@sths voi dk co file _sth.html.erb -->

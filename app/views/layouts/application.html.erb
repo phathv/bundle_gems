@@ -2,11 +2,9 @@
 <html>
 <head>
   <title>Demo</title>
-  <%= stylesheet_link_tag :all %>
-  <%= javascript_include_tag 'application' %>
-  <%= javascript_include_tag "jquery.js" %>
-  <%= javascript_include_tag "jquery.min.js" %>
-  <%= javascript_include_tag "jquery_ujs.js" %>
+  <%= stylesheet_link_tag 'application', 'header', 'comment', 'messages' %>
+  <%#= javascript_include_tag :defaults %>
+  <%= javascript_include_tag 'jquery.min', 'jquery-ui.min', 'application', 'jquery_ujs' %>  
   <%= csrf_meta_tag %>
 </head>
 <body>
@@ -38,8 +36,9 @@
         <div id="menubar">
           <div id="menu-items">
             <ul>
-              <li><%= link_to 'Product', products_path %>|</li>
-              <li><%= link_to 'Category', categories_path %></li>
+              <li><%= link_to 'Product', products_path, :class => 'menu-item' %></li>
+              <li><%= link_to 'Category', categories_path, :class => 'menu-item' %></li>
+              <li><% if user_signed_in? %><%= link_to 'Account settings', edit_user_registration_path, :class => 'menu-item' %> <%end%></li>
             </ul>
           </div>
         </div>

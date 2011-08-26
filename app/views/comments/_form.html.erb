@@ -1,22 +1,12 @@
 <%#= form_for (@comment, :url => product_comment_path(@product)) do |f| %> <!--, :remote => true -->
-<%= form_for [@product, @comment] do |f| %> 
-
-  <% if  @comment.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@comment.errors.count, "error") %> prohibited this comment from being saved:</h2>
-      <ul>
-      <% @comment.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
+<%= form_for([@product, @comment], :remote => true) do |f| %> 
   <div class="field">
+    <%#= @comment.user_id.inspect %>
     <%= f.text_area :content, :rows => 6 %><br />
-    <%#= f.text_field :user_id %> <br />
+    <%= f.hidden_field :user_id %> <br />
     <%#= f.label :product_id %>    
     <%#= f.input :content, :rows => 6%>
-    <%#= f.input :user_id %>
+    <%# f.text_field :user_id => current_user.id %>
     <%#= f.input :product_id %>
   </div>
   <div class="actions">

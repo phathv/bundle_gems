@@ -1,4 +1,4 @@
-/* Replace the count of comments */
-$("#comments_count").html("<%= pluralize(comments.count, 'Comment') %>");
-$('#<%= dom_id(@post) %>').css('background', 'red');
-$('#<%= dom_id(@post) %>').hide("fade", {}, 1500);
+/* Replace the count of comments */	
+$("#comments_count").html("<%= pluralize(@product.comments.count, 'Comment') %>");
+$('#<%= dom_id(@comment) %>').css('background', 'red');
+$('#<%= dom_id(@comment) %>').hide("fade", {}, 1500);

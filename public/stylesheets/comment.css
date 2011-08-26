@@ -1,0 +1,42 @@
+
+.comment
+{
+  display: block;
+  background: #E5EEED;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  padding: 10px;
+  /*margin: 10px;*/
+  margin-left: auto;
+  margin-right: auto;
+}
+/*
+#comments ul {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+*/
+#comments li {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 8px;
+  list-style: none;
+  border: 1px solid #ccc;
+  width: 60%;
+  height: 100px;
+  background: #E5EEED;
+}
+
+#comments p {
+  margin: 0;
+  font-size: 12pt;
+}
+.age {
+  font-size: 10pt;
+  text-decoration: italic;
+  margin-bottom: 8px;
+  text-align: left;
+
+}

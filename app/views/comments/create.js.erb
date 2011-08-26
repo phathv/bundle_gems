@@ -1,9 +1,7 @@
-/* Insert a notice between the last comment and the comment form */
+/*Insert a notice between the last comment and the comment form */
 $("#comment-notice").html('<div class="flash-notice"><%= escape_javascript(flash.delete(:notice)) %></div>');
 /* Replace the count of comments */	
-$("#comments_count").html("<%= pluralize(comments.count, 'Comment') %>");
-
-$('#comments').prepend('<%= escape_javascript(render(:partial => @comment)) %>');
-//<!--#ham escape_javascript dung de hieu chinh dau nhay kep trong javascript -->
+$("#comments_count").html("<%= pluralize(@product.comments.count, 'Comment') %>");
+$('#comments').prepend('<%= escape_javascript(render(@comment)) %>');
 $('#comments > li:first').effect('highlight', {}, 3000);
-//$('#comment_form > form')[0].reset();
+$('#comment_form > form')[0].reset();
