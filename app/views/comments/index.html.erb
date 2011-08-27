@@ -7,9 +7,8 @@
 </div>
 <span id="comments_count"><%= pluralize(@comments.count, "Comment") %></span>
 <div id="comment-notice">
-</div> 
-<ul id="comments">
-  <%= render :partial => @comments.reverse %>
-</ul>
-
+</div>
+<div id="comments">  
+  <%= render :partial => @comments %>  
+</div>
 <!-- , :locals => { :list => true } render :partial =>'sth',:object => @sth co the thay bang render :partial =>@sths voi dk co file _sth.html.erb -->

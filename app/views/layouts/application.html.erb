@@ -23,14 +23,14 @@
     <td class="home_main">
       <div id="header">
         <div class="header-top">
-        <div id="user_nav">
-          <% if user_signed_in?  %>
-           <b>Sign in as <%= current_user.email %>. Not you?
-           <%= link_to "Sign out", destroy_user_session_path, :method => 'DELETE' %>
-          <% else %>
-           <%= link_to "Sign up", new_user_registration_path %> or <%= link_to "sign in ", new_user_session_path %>
-          <% end %> </b> 
-        </div>
+          <div id="user_nav">
+            <% if user_signed_in?  %>
+             <b>Sign in as <%= current_user.email %>. Not you?
+             <%= link_to "Sign out", destroy_user_session_path, :method => 'DELETE' %>
+            <% else %>
+             <%= link_to "Sign up", new_user_registration_path %> or <%= link_to "sign in ", new_user_session_path %>
+            <% end %> </b> 
+          </div>
         </div>
         <div class="header-main">
         <div id="menubar">
@@ -44,7 +44,7 @@
         </div>
         </div>
       </div>
-      <div id="container">          
+      <div id="container" class="content">          
         <%= yield %>
       </div>
     </td>

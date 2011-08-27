@@ -3,5 +3,5 @@ $("#comment-notice").html('<div class="flash-notice"><%= escape_javascript(flash
 /* Replace the count of comments */	
 $("#comments_count").html("<%= pluralize(@product.comments.count, 'Comment') %>");
 $('#comments').prepend('<%= escape_javascript(render(@comment)) %>');
-$('#comments > li:first').effect('highlight', {}, 3000);
+$('#comments > span:first').effect('highlight', {}, 3000);
 $('#comment_form > form')[0].reset();

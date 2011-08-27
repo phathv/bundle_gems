@@ -40,10 +40,10 @@ div.field, div.actions {
 
 .home_main{
   width: 965px;
-  vertical-align:top;
-  /*align: center;*/
-  margin-left:auto;
-  margin-right:auto;
+  vertical-align: top;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
 }
 .home_bg_left{
   width: 15%;
@@ -56,25 +56,29 @@ div.field, div.actions {
   margin-right: 0px;
 }
 
-#container {
-  background-color: #FFF;
-  border: solid 1px black;
+#container{
   margin-top: 1px;
-  margin-bottom:10px;
-  height: auto;
+  margin-bottom: 5px;
+  min-height: 500px;
+  max-height: 100%; 
+}
+.content
+{
+  background-color: #FFFFF0;
+  border: solid 1px black;  
   
 }
 #footer{
   width: auto;
-  height:60px;
+  height: 60px;
   margin-bottom: 100px;
   
 }
 .footer-main{  
-  text-align:center;
-  margin-left:auto;
-  margin-right:auto;
-  width:50%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 
 .show-item{

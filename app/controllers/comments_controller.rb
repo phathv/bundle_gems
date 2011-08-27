@@ -5,9 +5,11 @@ class CommentsController < InheritedResources::Base
   #before_filter :authenticate_user!, :except => [:index]
   #respond_to :html, :xml, :json
   def index
-    index!{
+    #@comments = Comment.find(:all, params[:product_id], :order => "created_at DESC")
+    
+    index!{      
       @comment = Comment.new
-      @comment.user_id = current_user.id
+      @comment.user_id = current_user.id  
     }
    
   end
