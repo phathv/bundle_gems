@@ -147,32 +147,3 @@ div.field, div.actions {
   margin-right: auto;
   width: 50%;
 }
-.span-24, div.span-24 {width:950px;margin-right:0;}
-hr {background:#ddd;color:#ddd;clear:both;float:none;width:100%;height:.1em;margin:0 0 1.45em;border:none;}
-hr.space {background:#fff;color:#fff;visibility:hidden;}
-	#slider ul, #slider li{
-		margin:0;
-		padding:0;
-		list-style:none;
-	}
-	#slider, #slider li{ 
-		width:950;
-		height:372px;
-		overflow:hidden; 
-	}
-    
- /*Easy Slider */
-	#slider ul, #slider li,
-	#slider2 ul, #slider2 li{
-		margin:0;
-		padding:0;
-		list-style:none;
-		}
-	
-/*	#slider2{margin-top:1em;}*/
-	
-	#slider li, #slider2 li{ 
-		height:230px;
-		overflow:hidden; 	
-	}
-    

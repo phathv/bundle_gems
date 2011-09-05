@@ -12,7 +12,7 @@ gem 'has_scope'
 gem 'nifty-generators'
 gem 'simple_form'
 gem 'jquery-rails'
-
+gem 'paperclip'
 group :development do
   gem 'rspec'
   gem 'rspec-rails'

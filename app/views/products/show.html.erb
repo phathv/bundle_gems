@@ -33,6 +33,12 @@
   </td>
   </tr>
   <tr>
+  <td>
+    <b>Photo:</b>
+    <%= image_tag @product.photo.url(:normal) %>
+  </td>
+  </tr>
+  <tr>
     <td>
     <%= link_to 'Edit', edit_product_path(@product) %> |
     <%= link_to 'view all', products_path %> |

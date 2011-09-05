@@ -7,7 +7,8 @@ class CreateProducts < ActiveRecord::Migration
       t.integer :category_id
       t.integer :rating
       t.boolean :discontinued
-
+      t.string :img_1
+      t.string :img_2
       t.timestamps
     end
   end

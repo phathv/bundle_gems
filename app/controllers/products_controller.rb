@@ -5,5 +5,6 @@ class ProductsController < InheritedResources::Base
   #belongs_to :category
   def create  
     create! { products_path }  #return to list, pass over show action
-  end  
+  end
+  
 end

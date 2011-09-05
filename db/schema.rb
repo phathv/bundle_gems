@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110814045420) do
+ActiveRecord::Schema.define(:version => 20110901040015) do
 
   create_table "categories", :force => true do |t|
     t.string   "name"
@@ -28,13 +28,19 @@ ActiveRecord::Schema.define(:version => 20110814045420) do
 
   create_table "products", :force => true do |t|
     t.string   "name"
-    t.decimal  "price",        :precision => 10, :scale => 0
+    t.decimal  "price",              :precision => 10, :scale => 0
     t.date     "released_on"
     t.integer  "category_id"
     t.integer  "rating"
     t.boolean  "discontinued"
+    t.string   "img_1"
+    t.string   "img_2"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "photo_file_name"
+    t.string   "photo_content_type"
+    t.integer  "photo_file_size"
+    t.datetime "photo_updated_at"
   end
 
   create_table "users", :force => true do |t|

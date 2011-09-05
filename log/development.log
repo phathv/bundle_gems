@@ -12781,3 +12781,1746 @@ Started GET "/" for 127.0.0.1 at 2011-08-31 14:51:13 +0700
   [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
 Rendered products/index.html.erb within layouts/application (72.0ms)
 Completed 200 OK in 82ms (Views: 80.6ms | ActiveRecord: 0.7ms)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from <top (required)> at /home/kevin/vinova/rails_project/rails30_apps/demo/config/environment.rb:5)
+  [1m[36mSQL (0.6ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (0.4ms)[0m  SHOW TABLES
+  [1m[36mSQL (10.7ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations`[0m
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from <top (required)> at /home/kevin/vinova/rails_project/rails30_apps/demo/config/environment.rb:5)
+  [1m[36mSQL (0.6ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (0.4ms)[0m  SHOW TABLES
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations`[0m
+  [1m[35mSQL (0.4ms)[0m  SHOW TABLES
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations`[0m
+Migrating to CreateComments (20110814045420)
+  [1m[35mSQL (39.3ms)[0m  DROP TABLE `comments`
+  [1m[36mAREL (4.5ms)[0m  [1mDELETE FROM `schema_migrations` WHERE `schema_migrations`.`version` = '20110814045420'[0m
+  [1m[35mSQL (0.6ms)[0m  SHOW TABLES
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations`[0m
+  [1m[35mSQL (0.2ms)[0m  SHOW TABLES
+  [1m[36mSQL (0.8ms)[0m  [1mdescribe `categories`[0m
+  [1m[35mSQL (0.4ms)[0m  SHOW KEYS FROM `categories`
+  [1m[36mSQL (1.0ms)[0m  [1mdescribe `products`[0m
+  [1m[35mSQL (0.4ms)[0m  SHOW KEYS FROM `products`
+  [1m[36mSQL (0.8ms)[0m  [1mdescribe `users`[0m
+  [1m[35mSQL (0.7ms)[0m  SHOW KEYS FROM `users`
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from <top (required)> at /home/kevin/vinova/rails_project/rails30_apps/demo/config/environment.rb:5)
+  [1m[36mSQL (0.6ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (0.2ms)[0m  SHOW TABLES
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations`[0m
+  [1m[35mSQL (0.3ms)[0m  SHOW TABLES
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations`[0m
+Migrating to DeviseCreateUsers (20110812145500)
+  [1m[35mSQL (14.9ms)[0m  DROP TABLE `users`
+  [1m[36mAREL (0.7ms)[0m  [1mDELETE FROM `schema_migrations` WHERE `schema_migrations`.`version` = '20110812145500'[0m
+  [1m[35mSQL (0.4ms)[0m  SHOW TABLES
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations`[0m
+  [1m[35mSQL (0.2ms)[0m  SHOW TABLES
+  [1m[36mSQL (0.4ms)[0m  [1mdescribe `categories`[0m
+  [1m[35mSQL (0.2ms)[0m  SHOW KEYS FROM `categories`
+  [1m[36mSQL (0.6ms)[0m  [1mdescribe `products`[0m
+  [1m[35mSQL (0.2ms)[0m  SHOW KEYS FROM `products`
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from <top (required)> at /home/kevin/vinova/rails_project/rails30_apps/demo/config/environment.rb:5)
+  [1m[36mSQL (0.6ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (0.4ms)[0m  SHOW TABLES
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations`[0m
+  [1m[35mSQL (0.4ms)[0m  SHOW TABLES
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations`[0m
+Migrating to CreateProducts (20110812142023)
+  [1m[35mSQL (14.9ms)[0m  DROP TABLE `products`
+  [1m[36mAREL (0.5ms)[0m  [1mDELETE FROM `schema_migrations` WHERE `schema_migrations`.`version` = '20110812142023'[0m
+  [1m[35mSQL (0.4ms)[0m  SHOW TABLES
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations`[0m
+  [1m[35mSQL (0.2ms)[0m  SHOW TABLES
+  [1m[36mSQL (0.4ms)[0m  [1mdescribe `categories`[0m
+  [1m[35mSQL (0.2ms)[0m  SHOW KEYS FROM `categories`
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from <top (required)> at /home/kevin/vinova/rails_project/rails30_apps/demo/config/environment.rb:5)
+  [1m[36mSQL (0.5ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (0.3ms)[0m  SHOW TABLES
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations`[0m
+Migrating to CreateCategories (20110812141431)
+Migrating to CreateProducts (20110812142023)
+  [1m[35mSQL (23.5ms)[0m  CREATE TABLE `products` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `price` decimal, `released_on` date, `category_id` int(11), `rating` int(11), `discontinued` tinyint(1), `img_1` varchar(255), `img_2` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20110812142023')[0m
+Migrating to DeviseCreateUsers (20110812145500)
+  [1m[35mSQL (8.7ms)[0m  CREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `email` varchar(255) DEFAULT '' NOT NULL, `encrypted_password` varchar(128) DEFAULT '' NOT NULL, `reset_password_token` varchar(255), `reset_password_sent_at` datetime, `remember_created_at` datetime, `sign_in_count` int(11) DEFAULT 0, `current_sign_in_at` datetime, `last_sign_in_at` datetime, `current_sign_in_ip` varchar(255), `last_sign_in_ip` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36mSQL (0.6ms)[0m  [1mSHOW KEYS FROM `users`[0m
+  [1m[35mSQL (17.6ms)[0m  CREATE UNIQUE INDEX `index_users_on_email` ON `users` (`email`)
+  [1m[36mSQL (0.6ms)[0m  [1mSHOW KEYS FROM `users`[0m
+  [1m[35mSQL (13.0ms)[0m  CREATE UNIQUE INDEX `index_users_on_reset_password_token` ON `users` (`reset_password_token`)
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20110812145500')[0m
+Migrating to CreateComments (20110814045420)
+  [1m[35mSQL (7.6ms)[0m  CREATE TABLE `comments` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `content` text, `user_id` int(11), `product_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20110814045420')[0m
+  [1m[35mSQL (0.4ms)[0m  SHOW TABLES
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations`[0m
+  [1m[35mSQL (0.2ms)[0m  SHOW TABLES
+  [1m[36mSQL (0.5ms)[0m  [1mdescribe `categories`[0m
+  [1m[35mSQL (0.2ms)[0m  SHOW KEYS FROM `categories`
+  [1m[36mSQL (0.5ms)[0m  [1mdescribe `comments`[0m
+  [1m[35mSQL (0.2ms)[0m  SHOW KEYS FROM `comments`
+  [1m[36mSQL (0.6ms)[0m  [1mdescribe `products`[0m
+  [1m[35mSQL (0.2ms)[0m  SHOW KEYS FROM `products`
+  [1m[36mSQL (0.8ms)[0m  [1mdescribe `users`[0m
+  [1m[35mSQL (0.4ms)[0m  SHOW KEYS FROM `users`
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from <top (required)> at /home/kevin/vinova/rails_project/rails30_apps/demo/config/environment.rb:5)
+
+
+Started GET "/" for 127.0.0.1 at 2011-09-01 08:58:13 +0700
+  Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.4ms)[0m  [1mSELECT `products`.* FROM `products`[0m
+Rendered products/index.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 161ms (Views: 34.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/products/new" for 127.0.0.1 at 2011-09-01 08:58:17 +0700
+  Processing by ProductsController#new as HTML
+Completed   in 12ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2011-09-01 08:58:17 +0700
+  Processing by Devise::SessionsController#new as HTML
+Rendered /home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/devise-1.4.2/app/views/devise/shared/_links.erb (2.0ms)
+Rendered /home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/devise-1.4.2/app/views/devise/sessions/new.html.erb within layouts/application (17.7ms)
+Completed 200 OK in 60ms (Views: 27.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2011-09-01 08:58:19 +0700
+  Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yz6xLJ5V8QuRrZgJp7BOuHYzoyJJWA/sPOiC6DA+LH4=", "user"=>{"email"=>"kevin2@vinova.sg", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[35mSQL (0.6ms)[0m  SHOW TABLES
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'kevin2@vinova.sg' LIMIT 1[0m
+Completed   in 88ms
+  Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yz6xLJ5V8QuRrZgJp7BOuHYzoyJJWA/sPOiC6DA+LH4=", "user"=>{"email"=>"kevin2@vinova.sg", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+Rendered /home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/devise-1.4.2/app/views/devise/shared/_links.erb (1.9ms)
+Rendered /home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/devise-1.4.2/app/views/devise/sessions/new.html.erb within layouts/application (13.6ms)
+Completed 200 OK in 148ms (Views: 21.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2011-09-01 08:58:22 +0700
+  Processing by Devise::RegistrationsController#new as HTML
+Rendered /home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/devise-1.4.2/app/views/devise/shared/_links.erb (2.0ms)
+Rendered /home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/devise-1.4.2/app/views/devise/registrations/new.html.erb within layouts/application (26.4ms)
+Completed 200 OK in 55ms (Views: 40.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2011-09-01 08:58:32 +0700
+  Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yz6xLJ5V8QuRrZgJp7BOuHYzoyJJWA/sPOiC6DA+LH4=", "user"=>{"email"=>"kevin@vinova.sg", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mSELECT 1 FROM `users` WHERE (`users`.`email` = BINARY 'kevin@vinova.sg') LIMIT 1[0m
+  [1m[35mSQL (1.1ms)[0m  describe `users`
+  [1m[36mAREL (0.6ms)[0m  [1mINSERT INTO `users` (`email`, `encrypted_password`, `reset_password_token`, `reset_password_sent_at`, `remember_created_at`, `sign_in_count`, `current_sign_in_at`, `last_sign_in_at`, `current_sign_in_ip`, `last_sign_in_ip`, `created_at`, `updated_at`) VALUES ('kevin@vinova.sg', '$2a$10$87XVPnYSwy6RkYA724qLLuTTdbL79bqXuNFPW5fZuauY4lQI8IL/K', NULL, NULL, NULL, 0, NULL, NULL, NULL, NULL, '2011-09-01 01:58:32', '2011-09-01 01:58:32')[0m
+  [1m[35mSQL (7.7ms)[0m  COMMIT
+  [1m[36mSQL (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.6ms)[0m  UPDATE `users` SET `last_sign_in_at` = '2011-09-01 01:58:32', `current_sign_in_at` = '2011-09-01 01:58:32', `last_sign_in_ip` = '127.0.0.1', `current_sign_in_ip` = '127.0.0.1', `sign_in_count` = 1, `updated_at` = '2011-09-01 01:58:32' WHERE `users`.`id` = 1
+  [1m[36mSQL (0.5ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/products/new
+Completed 302 Found in 384ms
+
+
+Started GET "/products/new" for 127.0.0.1 at 2011-09-01 08:58:33 +0700
+  Processing by ProductsController#new as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mCategory Load (0.3ms)[0m  [1mSELECT `categories`.* FROM `categories`[0m
+Rendered products/_form.html.erb (646.3ms)
+Rendered products/new.html.erb within layouts/application (648.2ms)
+Completed 500 Internal Server Error in 689ms
+
+ActionView::Template::Error (undefined method `file_format' for #<SimpleForm::FormBuilder:0xa7c2a40>):
+    17:   <%= f.association :category, :include_blank => false %>  
+    18:   <%= f.input :rating, :collection => 1..5, :as => :radio %>  
+    19:   <%= f.input :discontinued %>
+    20:   <%= f.file_format :img_1, :label => 'Image 1' %>
+    21:   <%= f.file_format :img_2, :label => 'Image 2' %>  
+    22:   <%= f.button :submit %>  
+    23: <% end %>
+  app/views/products/_form.html.erb:20:in `block in _app_views_products__form_html_erb___848760515_83999620_680152776'
+  app/views/products/_form.html.erb:1:in `_app_views_products__form_html_erb___848760515_83999620_680152776'
+  app/views/products/new.html.erb:3:in `_app_views_products_new_html_erb__351859136_84066950_1045779634'
+
+Rendered /home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+Rendered /home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.4ms)
+Rendered /home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (11.2ms)
+
+
+Started GET "/products/new" for 127.0.0.1 at 2011-09-01 09:28:18 +0700
+  Processing by ProductsController#new as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mCategory Load (0.3ms)[0m  [1mSELECT `categories`.* FROM `categories`[0m
+Rendered products/_form.html.erb (178.3ms)
+Rendered products/new.html.erb within layouts/application (180.2ms)
+Completed 500 Internal Server Error in 220ms
+
+ActionView::Template::Error (undefined method `file_format' for #<SimpleForm::FormBuilder:0x98a5a44>):
+    17:   <%= f.association :category, :include_blank => false %>  
+    18:   <%= f.input :rating, :collection => 1..5, :as => :radio %>  
+    19:   <%= f.input :discontinued %>
+    20:   <%= f.file_format :img_1, :label => 'Image 1' %>
+    21:   <%= f.file_format :img_2, :label => 'Image 2' %>  
+    22:   <%= f.button :submit %>  
+    23: <% end %>
+  app/views/products/_form.html.erb:20:in `block in _app_views_products__form_html_erb___848760515_83117800_680152776'
+  app/views/products/_form.html.erb:1:in `_app_views_products__form_html_erb___848760515_83117800_680152776'
+  app/views/products/new.html.erb:3:in `_app_views_products_new_html_erb__351859136_83323370_1045779634'
+
+Rendered /home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+Rendered /home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.3ms)
+Rendered /home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.4ms)
+
+
+Started GET "/products/new" for 127.0.0.1 at 2011-09-01 09:28:28 +0700
+  Processing by ProductsController#new as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT `categories`.* FROM `categories`[0m
+Rendered products/_form.html.erb (175.6ms)
+Rendered products/new.html.erb within layouts/application (177.5ms)
+Completed 500 Internal Server Error in 217ms
+
+ActionView::Template::Error (undefined method `file_format' for #<SimpleForm::FormBuilder:0x9d805f0>):
+    17:   <%= f.association :category, :include_blank => false %>  
+    18:   <%= f.input :rating, :collection => 1..5, :as => :radio %>  
+    19:   <%= f.input :discontinued %>
+    20:   <%= f.file_format :img_1, :label => 'Image 1' %>
+    21:   <%= f.file_format :img_2, :label => 'Image 2' %>  
+    22:   <%= f.button :submit %>  
+    23: <% end %>
+  app/views/products/_form.html.erb:20:in `block in _app_views_products__form_html_erb___848760515_85797650_680152776'
+  app/views/products/_form.html.erb:1:in `_app_views_products__form_html_erb___848760515_85797650_680152776'
+  app/views/products/new.html.erb:3:in `_app_views_products_new_html_erb__351859136_85833150_1045779634'
+
+Rendered /home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+Rendered /home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.5ms)
+Rendered /home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.5ms)
+
+
+Started GET "/products/new" for 127.0.0.1 at 2011-09-01 09:28:40 +0700
+  Processing by ProductsController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+ERROR: compiling _app_views_products__form_html_erb___848760515_86379750_680152776 RAISED /home/kevin/vinova/rails_project/rails30_apps/demo/app/views/products/_form.html.erb:1: syntax error, unexpected ')'
+...=> {:multipart => true}do |f| );@output_buffer.safe_concat('...
+...                               ^
+/home/kevin/vinova/rails_project/rails30_apps/demo/app/views/products/_form.html.erb:26: syntax error, unexpected keyword_ensure, expecting ')'
+/home/kevin/vinova/rails_project/rails30_apps/demo/app/views/products/_form.html.erb:28: syntax error, unexpected keyword_end, expecting ')'
+Function body:           def _app_views_products__form_html_erb___848760515_86379750_680152776(local_assigns)
+            _old_virtual_path, @_virtual_path = @_virtual_path, "products/_form";_old_output_buffer = @output_buffer;form = local_assigns[:form];;@output_buffer = ActionView::OutputBuffer.new;@output_buffer.append= ( simple_form_for @product, :html => {:multipart => true}do |f| );@output_buffer.safe_concat('  
+');
+   if @product.errors.any? 
+@output_buffer.safe_concat('    <div id="error_explanation">
+      <h2>');@output_buffer.append= ( pluralize(@product.errors.count, "error") );@output_buffer.safe_concat(' prohibited this product from being saved:</h2>
+
+      <ul>
+');@output_buffer.append_if_string=        @product.errors.full_messages.each do |msg| 
+@output_buffer.safe_concat('        <li>');@output_buffer.append= ( msg );@output_buffer.safe_concat('</li>
+');       end 
+@output_buffer.safe_concat('      </ul>
+    </div>
+');   end 
+@output_buffer.safe_concat('  ');@output_buffer.append= ( f.input :name );@output_buffer.safe_concat('  
+');@output_buffer.safe_concat('  ');@output_buffer.append= ( f.input :price );@output_buffer.safe_concat('  
+');@output_buffer.safe_concat('  ');@output_buffer.append= ( f.input :released_on );@output_buffer.safe_concat('  
+');@output_buffer.safe_concat('  ');@output_buffer.append= ( f.association :category, :include_blank => false );@output_buffer.safe_concat('  
+');@output_buffer.safe_concat('  ');@output_buffer.append= ( f.input :rating, :collection => 1..5, :as => :radio );@output_buffer.safe_concat('  
+');@output_buffer.safe_concat('  ');@output_buffer.append= ( f.input :discontinued );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  ');@output_buffer.append= ( f.file_format :img_1, :label => 'Image 1' );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  ');@output_buffer.append= ( f.file_format :img_2, :label => 'Image 2' );@output_buffer.safe_concat('  
+');@output_buffer.safe_concat('  ');@output_buffer.append= ( f.button :submit );@output_buffer.safe_concat('  
+'); end 
+@output_buffer.safe_concat('
+');@output_buffer.to_s
+          ensure
+            @_virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+Backtrace: /home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/action_view/template.rb:258:in `module_eval'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/action_view/template.rb:258:in `compile'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/action_view/template.rb:134:in `block in render'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/activesupport-3.0.9/lib/active_support/notifications.rb:54:in `instrument'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/action_view/template.rb:127:in `render'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/action_view/render/partials.rb:333:in `render_partial'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/action_view/render/partials.rb:262:in `block in render'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/activesupport-3.0.9/lib/active_support/notifications.rb:52:in `block in instrument'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/activesupport-3.0.9/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/activesupport-3.0.9/lib/active_support/notifications.rb:52:in `instrument'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/action_view/render/partials.rb:260:in `render'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/action_view/render/partials.rb:378:in `_render_partial'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/action_view/render/rendering.rb:31:in `render'
+/home/kevin/vinova/rails_project/rails30_apps/demo/app/views/products/new.html.erb:3:in `_app_views_products_new_html_erb__351859136_86384580_1045779634'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/action_view/template.rb:135:in `block in render'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/activesupport-3.0.9/lib/active_support/notifications.rb:54:in `instrument'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/action_view/template.rb:127:in `render'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/action_view/render/rendering.rb:59:in `block in _render_template'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/activesupport-3.0.9/lib/active_support/notifications.rb:52:in `block in instrument'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/activesupport-3.0.9/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/activesupport-3.0.9/lib/active_support/notifications.rb:52:in `instrument'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/action_view/render/rendering.rb:56:in `_render_template'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/action_view/render/rendering.rb:26:in `render'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/abstract_controller/rendering.rb:115:in `_render_template'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/abstract_controller/rendering.rb:109:in `render_to_body'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/action_controller/metal/renderers.rb:47:in `render_to_body'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/action_controller/metal/compatibility.rb:55:in `render_to_body'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/abstract_controller/rendering.rb:102:in `render_to_string'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/abstract_controller/rendering.rb:93:in `render'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/action_controller/metal/rendering.rb:17:in `render'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/activesupport-3.0.9/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+/home/kevin/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/benchmark.rb:310:in `realtime'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/activesupport-3.0.9/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/action_controller/metal/instrumentation.rb:78:in `cleanup_view_runtime'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/activerecord-3.0.9/lib/active_record/railties/controller_runtime.rb:15:in `cleanup_view_runtime'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/action_controller/metal/mime_responds.rb:261:in `block in retrieve_response_from_mimes'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/action_controller/metal/responder.rb:190:in `call'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/action_controller/metal/responder.rb:190:in `default_render'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/action_controller/metal/responder.rb:126:in `to_html'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/responders-0.6.4/lib/responders/flash_responder.rb:93:in `to_html'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/action_controller/metal/responder.rb:119:in `respond'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/action_controller/metal/responder.rb:112:in `call'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/action_controller/metal/mime_responds.rb:232:in `respond_with'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/inherited_resources-1.2.2/lib/inherited_resources/actions.rb:19:in `new'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/abstract_controller/base.rb:150:in `process_action'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/action_controller/metal/rendering.rb:11:in `process_action'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/activesupport-3.0.9/lib/active_support/callbacks.rb:441:in `_run__142857171__process_action__923428431__callbacks'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/activesupport-3.0.9/lib/active_support/callbacks.rb:410:in `_run_process_action_callbacks'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/activesupport-3.0.9/lib/active_support/callbacks.rb:94:in `run_callbacks'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/activesupport-3.0.9/lib/active_support/notifications.rb:52:in `block in instrument'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/activesupport-3.0.9/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/activesupport-3.0.9/lib/active_support/notifications.rb:52:in `instrument'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/action_controller/metal/rescue.rb:17:in `process_action'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/abstract_controller/base.rb:119:in `process'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/abstract_controller/rendering.rb:41:in `process'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/action_controller/metal.rb:138:in `dispatch'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/action_controller/metal.rb:178:in `block in action'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/action_dispatch/routing/route_set.rb:62:in `call'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/action_dispatch/routing/route_set.rb:62:in `dispatch'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/action_dispatch/routing/route_set.rb:27:in `call'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/rack-mount-0.6.14/lib/rack/mount/route_set.rb:148:in `block in call'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:93:in `block in recognize'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:103:in `optimized_each'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:92:in `recognize'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/rack-mount-0.6.14/lib/rack/mount/route_set.rb:139:in `call'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/action_dispatch/routing/route_set.rb:493:in `call'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/warden-1.0.5/lib/warden/manager.rb:35:in `block in call'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/warden-1.0.5/lib/warden/manager.rb:34:in `catch'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/warden-1.0.5/lib/warden/manager.rb:34:in `call'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/action_dispatch/middleware/head.rb:14:in `call'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/rack-1.2.3/lib/rack/methodoverride.rb:24:in `call'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/action_dispatch/middleware/flash.rb:182:in `call'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/action_dispatch/middleware/session/abstract_store.rb:149:in `call'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/action_dispatch/middleware/cookies.rb:302:in `call'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/activerecord-3.0.9/lib/active_record/query_cache.rb:32:in `block in call'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/activerecord-3.0.9/lib/active_record/connection_adapters/abstract/query_cache.rb:28:in `cache'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/activerecord-3.0.9/lib/active_record/query_cache.rb:12:in `cache'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/activerecord-3.0.9/lib/active_record/query_cache.rb:31:in `call'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/activerecord-3.0.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:354:in `call'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/action_dispatch/middleware/callbacks.rb:46:in `block in call'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/activesupport-3.0.9/lib/active_support/callbacks.rb:416:in `_run_call_callbacks'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/action_dispatch/middleware/callbacks.rb:44:in `call'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/rack-1.2.3/lib/rack/sendfile.rb:107:in `call'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/action_dispatch/middleware/show_exceptions.rb:47:in `call'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/railties-3.0.9/lib/rails/rack/logger.rb:13:in `call'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/rack-1.2.3/lib/rack/runtime.rb:17:in `call'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/activesupport-3.0.9/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/rack-1.2.3/lib/rack/lock.rb:11:in `block in call'
+<internal:prelude>:10:in `synchronize'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/rack-1.2.3/lib/rack/lock.rb:11:in `call'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/action_dispatch/middleware/static.rb:30:in `call'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/railties-3.0.9/lib/rails/application.rb:168:in `call'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/railties-3.0.9/lib/rails/application.rb:77:in `method_missing'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/railties-3.0.9/lib/rails/rack/log_tailer.rb:14:in `call'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/rack-1.2.3/lib/rack/content_length.rb:13:in `call'
+/home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/rack-1.2.3/lib/rack/handler/webrick.rb:52:in `service'
+/home/kevin/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+/home/kevin/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+/home/kevin/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+Rendered products/_form.html.erb (1.5ms)
+Rendered products/new.html.erb within layouts/application (3.3ms)
+Completed 500 Internal Server Error in 42ms
+
+ActionView::Template::Error (/home/kevin/vinova/rails_project/rails30_apps/demo/app/views/products/_form.html.erb:1: syntax error, unexpected ')'
+...=> {:multipart => true}do |f| );@output_buffer.safe_concat('...
+...                               ^
+/home/kevin/vinova/rails_project/rails30_apps/demo/app/views/products/_form.html.erb:26: syntax error, unexpected keyword_ensure, expecting ')'
+/home/kevin/vinova/rails_project/rails30_apps/demo/app/views/products/_form.html.erb:28: syntax error, unexpected keyword_end, expecting ')'):
+    1: <%= simple_form_for @product, :html => {:multipart => true}do |f| %>  
+    2:   <%#= f.error_messages %>  
+    3:   <% if @product.errors.any? %>
+    4:     <div id="error_explanation">
+  app/views/products/new.html.erb:3:in `_app_views_products_new_html_erb__351859136_86384580_1045779634'
+
+Rendered /home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+Rendered /home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (14.4ms)
+Rendered /home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (20.5ms)
+
+
+Started GET "/products/new" for 127.0.0.1 at 2011-09-01 09:29:04 +0700
+  Processing by ProductsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mCategory Load (0.2ms)[0m  SELECT `categories`.* FROM `categories`
+Rendered products/_form.html.erb (206.2ms)
+Rendered products/new.html.erb within layouts/application (207.9ms)
+Completed 500 Internal Server Error in 246ms
+
+ActionView::Template::Error (undefined method `file_format' for #<SimpleForm::FormBuilder:0xab490c4>):
+    17:   <%= f.association :category, :include_blank => false %>  
+    18:   <%= f.input :rating, :collection => 1..5, :as => :radio %>  
+    19:   <%= f.input :discontinued %>
+    20:   <%= f.file_format :img_1, :label => 'Image 1' %>
+    21:   <%= f.file_format :img_2, :label => 'Image 2' %>  
+    22:   <%= f.button :submit %>  
+    23: <% end %>
+  app/views/products/_form.html.erb:20:in `block in _app_views_products__form_html_erb___848760515_89884890_680152776'
+  app/views/products/_form.html.erb:1:in `_app_views_products__form_html_erb___848760515_89884890_680152776'
+  app/views/products/new.html.erb:3:in `_app_views_products_new_html_erb__351859136_89889620_1045779634'
+
+Rendered /home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+Rendered /home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.3ms)
+Rendered /home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.4ms)
+
+
+Started GET "/products/new" for 127.0.0.1 at 2011-09-01 09:29:37 +0700
+  Processing by ProductsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mCategory Load (0.3ms)[0m  SELECT `categories`.* FROM `categories`
+Rendered products/_form.html.erb (197.1ms)
+Rendered products/new.html.erb within layouts/application (203.4ms)
+Completed 200 OK in 243ms (Views: 212.5ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/products" for 127.0.0.1 at 2011-09-01 09:30:50 +0700
+  Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yz6xLJ5V8QuRrZgJp7BOuHYzoyJJWA/sPOiC6DA+LH4=", "product"=>{"name"=>"san pham 1", "price"=>"2", "released_on(1i)"=>"2011", "released_on(2i)"=>"9", "released_on(3i)"=>"1", "category_id"=>"1", "rating"=>"3", "discontinued"=>"1", "img_1"=>#<ActionDispatch::Http::UploadedFile:0xa4931e4 @original_filename="kevin_avatar", @content_type="application/octet-stream", @headers="Content-Disposition: form-data; name=\"product[img_1]\"; filename=\"kevin_avatar\"\r\nContent-Type: application/octet-stream\r\n", @tempfile=#<File:/tmp/RackMultipart20110901-2833-lnxh8>>, "img_2"=>#<ActionDispatch::Http::UploadedFile:0xa4931bc @original_filename="fb.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"product[img_2]\"; filename=\"fb.jpg\"\r\nContent-Type: image/jpeg\r\n", @tempfile=#<File:/tmp/RackMultipart20110901-2833-1lojtys>>}, "commit"=>"Create Product"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+WARNING: Can't mass-assign protected attributes: img_1, img_2
+  [1m[35mSQL (0.2ms)[0m  BEGIN
+  [1m[36mSQL (1.1ms)[0m  [1mdescribe `products`[0m
+  [1m[35mAREL (0.4ms)[0m  INSERT INTO `products` (`name`, `price`, `released_on`, `category_id`, `rating`, `discontinued`, `img_1`, `img_2`, `created_at`, `updated_at`) VALUES ('san pham 1', 2, '2011-09-01', 1, 3, 1, NULL, NULL, '2011-09-01 02:30:50', '2011-09-01 02:30:50')
+  [1m[36mSQL (9.5ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/products
+Completed 302 Found in 106ms
+
+
+Started GET "/products" for 127.0.0.1 at 2011-09-01 09:30:50 +0700
+  Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.4ms)[0m  SELECT `products`.* FROM `products`
+  [1m[36mCategory Load (0.4ms)[0m  [1mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered products/index.html.erb within layouts/application (77.3ms)
+Completed 200 OK in 89ms (Views: 87.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/products/1" for 127.0.0.1 at 2011-09-01 09:30:54 +0700
+  Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mProduct Load (0.3ms)[0m  SELECT `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+Rendered products/show.html.erb within layouts/application (36.8ms)
+Completed 200 OK in 78ms (Views: 45.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/products/1" for 127.0.0.1 at 2011-09-01 09:30:54 +0700
+  Processing by ProductsController#show as 
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[35mCategory Load (0.1ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1
+Rendered products/show.html.erb within layouts/application (41.2ms)
+Completed 200 OK in 139ms (Views: 51.0ms | ActiveRecord: 0.3ms)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from <top (required)> at /home/kevin/vinova/rails_project/rails30_apps/demo/config/environment.rb:5)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from <top (required)> at /home/kevin/vinova/rails_project/rails30_apps/demo/config/environment.rb:5)
+  [1m[36mSQL (0.5ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (0.4ms)[0m  SHOW TABLES
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations`[0m
+Migrating to AddImageToProduct (20110831)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from <top (required)> at /home/kevin/vinova/rails_project/rails30_apps/demo/config/environment.rb:5)
+  [1m[36mSQL (0.4ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (0.4ms)[0m  SHOW TABLES
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations`[0m
+Migrating to CreateCategories (20110812141431)
+Migrating to CreateProducts (20110812142023)
+Migrating to DeviseCreateUsers (20110812145500)
+Migrating to CreateComments (20110814045420)
+Migrating to AddAttachmentPhotoToProduct (20110901040015)
+  [1m[35mSQL (35.7ms)[0m  ALTER TABLE `products` ADD `photo_file_name` varchar(255)
+  [1m[36mSQL (12.0ms)[0m  [1mALTER TABLE `products` ADD `photo_content_type` varchar(255)[0m
+  [1m[35mSQL (15.3ms)[0m  ALTER TABLE `products` ADD `photo_file_size` int(11)
+  [1m[36mSQL (263.0ms)[0m  [1mALTER TABLE `products` ADD `photo_updated_at` datetime[0m
+  [1m[35mSQL (2.8ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20110901040015')
+  [1m[36mSQL (0.5ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations`
+  [1m[36mSQL (0.4ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (0.7ms)[0m  describe `categories`
+  [1m[36mSQL (0.3ms)[0m  [1mSHOW KEYS FROM `categories`[0m
+  [1m[35mSQL (0.8ms)[0m  describe `comments`
+  [1m[36mSQL (0.3ms)[0m  [1mSHOW KEYS FROM `comments`[0m
+  [1m[35mSQL (1.2ms)[0m  describe `products`
+  [1m[36mSQL (0.4ms)[0m  [1mSHOW KEYS FROM `products`[0m
+  [1m[35mSQL (1.1ms)[0m  describe `users`
+  [1m[36mSQL (0.5ms)[0m  [1mSHOW KEYS FROM `users`[0m
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from <top (required)> at /home/kevin/vinova/rails_project/rails30_apps/demo/config/environment.rb:5)
+
+
+Started GET "/products/1" for 127.0.0.1 at 2011-09-01 11:13:15 +0700
+  Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSQL (0.4ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mProduct Load (0.4ms)[0m  [1mSELECT `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[35mCategory Load (0.1ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1
+Rendered products/show.html.erb within layouts/application (60.6ms)
+Completed 200 OK in 276ms (Views: 70.0ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/photos/medium/missing.png" for 127.0.0.1 at 2011-09-01 11:13:16 +0700
+
+ActionController::RoutingError (No route matches "/photos/medium/missing.png"):
+  
+
+Rendered /home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.2ms)
+
+
+Started GET "/products/1/edit" for 127.0.0.1 at 2011-09-01 11:13:22 +0700
+  Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mProduct Load (0.2ms)[0m  SELECT `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT `categories`.* FROM `categories`[0m
+Rendered products/_form.html.erb (732.9ms)
+Rendered products/edit.html.erb within layouts/application (741.2ms)
+Completed 200 OK in 836ms (Views: 772.0ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/products/1" for 127.0.0.1 at 2011-09-01 11:13:48 +0700
+  Processing by ProductsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yz6xLJ5V8QuRrZgJp7BOuHYzoyJJWA/sPOiC6DA+LH4=", "product"=>{"name"=>"san pham 1", "price"=>"2.0", "released_on(1i)"=>"2011", "released_on(2i)"=>"9", "released_on(3i)"=>"1", "category_id"=>"1", "rating"=>"3", "discontinued"=>"1", "photo"=>#<ActionDispatch::Http::UploadedFile:0x98eece4 @original_filename="kevin_avatar", @content_type="application/octet-stream", @headers="Content-Disposition: form-data; name=\"product[photo]\"; filename=\"kevin_avatar\"\r\nContent-Type: application/octet-stream\r\n", @tempfile=#<File:/tmp/RackMultipart20110901-3693-1htfz2q>>}, "commit"=>"Update Product", "id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+WARNING: Can't mass-assign protected attributes: photo
+  [1m[36mSQL (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35mCategory Load (0.3ms)[0m  SELECT `categories`.* FROM `categories`
+Rendered products/_form.html.erb (188.0ms)
+Rendered products/edit.html.erb within layouts/application (195.1ms)
+Completed 200 OK in 358ms (Views: 203.1ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/products/1" for 127.0.0.1 at 2011-09-01 11:14:18 +0700
+  Processing by ProductsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yz6xLJ5V8QuRrZgJp7BOuHYzoyJJWA/sPOiC6DA+LH4=", "product"=>{"name"=>"san pham 1", "price"=>"2.0", "released_on(1i)"=>"2011", "released_on(2i)"=>"9", "released_on(3i)"=>"1", "category_id"=>"1", "rating"=>"3", "discontinued"=>"1", "photo"=>#<ActionDispatch::Http::UploadedFile:0xa7ac268 @original_filename="fb.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"product[photo]\"; filename=\"fb.jpg\"\r\nContent-Type: image/jpeg\r\n", @tempfile=#<File:/tmp/RackMultipart20110901-3693-4eji40>>}, "commit"=>"Update Product", "id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mProduct Load (0.1ms)[0m  SELECT `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+WARNING: Can't mass-assign protected attributes: photo
+  [1m[35mSQL (0.2ms)[0m  ROLLBACK
+  [1m[36mCategory Load (0.1ms)[0m  [1mSELECT `categories`.* FROM `categories`[0m
+Rendered products/_form.html.erb (159.8ms)
+Rendered products/edit.html.erb within layouts/application (166.7ms)
+Completed 200 OK in 239ms (Views: 174.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2011-09-01 11:18:53 +0700
+  Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.5ms)[0m  SELECT `products`.* FROM `products`
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered products/index.html.erb within layouts/application (83.1ms)
+Completed 200 OK in 93ms (Views: 91.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/products/1" for 127.0.0.1 at 2011-09-01 11:19:00 +0700
+  Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mProduct Load (0.2ms)[0m  SELECT `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1
+  [1m[36mCategory Load (0.1ms)[0m  [1mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+Rendered products/show.html.erb within layouts/application (51.6ms)
+Completed 200 OK in 139ms (Views: 60.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/photos/medium/missing.png" for 127.0.0.1 at 2011-09-01 11:19:00 +0700
+
+ActionController::RoutingError (No route matches "/photos/medium/missing.png"):
+  
+
+Rendered /home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.3ms)
+
+
+Started GET "/products/1/edit" for 127.0.0.1 at 2011-09-01 11:19:26 +0700
+  Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[35mCategory Load (0.1ms)[0m  SELECT `categories`.* FROM `categories`
+Rendered products/_form.html.erb (230.4ms)
+Rendered products/edit.html.erb within layouts/application (237.4ms)
+Completed 200 OK in 289ms (Views: 250.8ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/products/1" for 127.0.0.1 at 2011-09-01 11:19:40 +0700
+  Processing by ProductsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yz6xLJ5V8QuRrZgJp7BOuHYzoyJJWA/sPOiC6DA+LH4=", "product"=>{"name"=>"san pham 1", "price"=>"2.0", "released_on(1i)"=>"2011", "released_on(2i)"=>"9", "released_on(3i)"=>"1", "category_id"=>"1", "rating"=>"3", "discontinued"=>"1", "photo"=>#<ActionDispatch::Http::UploadedFile:0xab37f04 @original_filename="fb.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"product[photo]\"; filename=\"fb.jpg\"\r\nContent-Type: image/jpeg\r\n", @tempfile=#<File:/tmp/RackMultipart20110901-3693-15vh06c>>}, "commit"=>"Update Product", "id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mProduct Load (0.1ms)[0m  SELECT `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+WARNING: Can't mass-assign protected attributes: photo
+  [1m[35mSQL (0.2ms)[0m  ROLLBACK
+  [1m[36mCategory Load (0.1ms)[0m  [1mSELECT `categories`.* FROM `categories`[0m
+Rendered products/_form.html.erb (218.6ms)
+Rendered products/edit.html.erb within layouts/application (225.5ms)
+Completed 200 OK in 299ms (Views: 233.9ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/products/1" for 127.0.0.1 at 2011-09-01 11:35:48 +0700
+  Processing by ProductsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yz6xLJ5V8QuRrZgJp7BOuHYzoyJJWA/sPOiC6DA+LH4=", "product"=>{"name"=>"san pham 1", "price"=>"2.0", "released_on(1i)"=>"2011", "released_on(2i)"=>"9", "released_on(3i)"=>"1", "category_id"=>"1", "rating"=>"3", "discontinued"=>"1", "photo"=>#<ActionDispatch::Http::UploadedFile:0xa9109b0 @original_filename="fb.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"product[photo]\"; filename=\"fb.jpg\"\r\nContent-Type: image/jpeg\r\n", @tempfile=#<File:/tmp/RackMultipart20110901-3693-7e9uz5>>}, "commit"=>"Update Product", "id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+WARNING: Can't mass-assign protected attributes: photo
+  [1m[36mSQL (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35mCategory Load (0.2ms)[0m  SELECT `categories`.* FROM `categories`
+Rendered products/_form.html.erb (181.7ms)
+Rendered products/edit.html.erb within layouts/application (188.8ms)
+Completed 200 OK in 308ms (Views: 197.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2011-09-01 12:44:02 +0700
+  Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT `products`.* FROM `products`[0m
+  [1m[35mCategory Load (0.1ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered products/index.html.erb within layouts/application (128.8ms)
+Completed 200 OK in 139ms (Views: 137.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/products/1" for 127.0.0.1 at 2011-09-01 12:44:04 +0700
+  Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[35mCategory Load (0.2ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1
+Rendered products/show.html.erb within layouts/application (96.5ms)
+Completed 200 OK in 139ms (Views: 105.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/photos/medium/missing.png" for 127.0.0.1 at 2011-09-01 12:44:04 +0700
+
+ActionController::RoutingError (No route matches "/photos/medium/missing.png"):
+  
+
+Rendered /home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.2ms)
+
+
+Started GET "/products/1/edit" for 127.0.0.1 at 2011-09-01 12:44:06 +0700
+  Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mProduct Load (0.2ms)[0m  SELECT `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT `categories`.* FROM `categories`[0m
+Rendered products/_form.html.erb (202.7ms)
+Rendered products/edit.html.erb within layouts/application (210.1ms)
+Completed 200 OK in 253ms (Views: 219.8ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/products/1" for 127.0.0.1 at 2011-09-01 12:44:15 +0700
+  Processing by ProductsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yz6xLJ5V8QuRrZgJp7BOuHYzoyJJWA/sPOiC6DA+LH4=", "product"=>{"name"=>"san pham 1", "price"=>"2.0", "released_on(1i)"=>"2011", "released_on(2i)"=>"9", "released_on(3i)"=>"1", "category_id"=>"1", "rating"=>"3", "discontinued"=>"1", "photo"=>#<ActionDispatch::Http::UploadedFile:0xb36e254 @original_filename="fb.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"product[photo]\"; filename=\"fb.jpg\"\r\nContent-Type: image/jpeg\r\n", @tempfile=#<File:/tmp/RackMultipart20110901-3693-1wfqgr7>>}, "commit"=>"Update Product", "id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+WARNING: Can't mass-assign protected attributes: photo
+  [1m[36mSQL (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35mCategory Load (0.1ms)[0m  SELECT `categories`.* FROM `categories`
+Rendered products/_form.html.erb (185.7ms)
+Rendered products/edit.html.erb within layouts/application (236.5ms)
+Completed 200 OK in 309ms (Views: 244.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/products/" for 127.0.0.1 at 2011-09-01 12:44:36 +0700
+  Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT `products`.* FROM `products`[0m
+  [1m[35mCategory Load (0.2ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered products/index.html.erb within layouts/application (80.9ms)
+Completed 200 OK in 91ms (Views: 89.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/products/1" for 127.0.0.1 at 2011-09-01 12:44:39 +0700
+  Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[35mCategory Load (0.2ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1
+Rendered products/show.html.erb within layouts/application (45.5ms)
+Completed 200 OK in 92ms (Views: 54.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/photos/medium/missing.png" for 127.0.0.1 at 2011-09-01 12:44:39 +0700
+
+ActionController::RoutingError (No route matches "/photos/medium/missing.png"):
+  
+
+Rendered /home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.2ms)
+
+
+Started GET "/products/1" for 127.0.0.1 at 2011-09-01 12:44:41 +0700
+  Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mProduct Load (1.7ms)[0m  SELECT `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+Rendered products/show.html.erb within layouts/application (43.6ms)
+Completed 200 OK in 130ms (Views: 52.7ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/photos/medium/missing.png" for 127.0.0.1 at 2011-09-01 12:44:41 +0700
+
+ActionController::RoutingError (No route matches "/photos/medium/missing.png"):
+  
+
+Rendered /home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (5.3ms)
+
+
+Started GET "/products/1/edit" for 127.0.0.1 at 2011-09-01 12:45:16 +0700
+  Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[35mCategory Load (0.2ms)[0m  SELECT `categories`.* FROM `categories`
+Rendered products/_form.html.erb (203.9ms)
+Rendered products/edit.html.erb within layouts/application (210.9ms)
+Completed 200 OK in 254ms (Views: 219.8ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/products/1" for 127.0.0.1 at 2011-09-01 12:45:26 +0700
+  Processing by ProductsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yz6xLJ5V8QuRrZgJp7BOuHYzoyJJWA/sPOiC6DA+LH4=", "product"=>{"name"=>"san pham 1", "price"=>"2.0", "released_on(1i)"=>"2011", "released_on(2i)"=>"9", "released_on(3i)"=>"1", "category_id"=>"1", "rating"=>"3", "discontinued"=>"1", "photo"=>#<ActionDispatch::Http::UploadedFile:0xb5e788c @original_filename="kevin_avatar", @content_type="application/octet-stream", @headers="Content-Disposition: form-data; name=\"product[photo]\"; filename=\"kevin_avatar\"\r\nContent-Type: application/octet-stream\r\n", @tempfile=#<File:/tmp/RackMultipart20110901-3693-rn6tbh>>}, "commit"=>"Update Product", "id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mProduct Load (0.2ms)[0m  SELECT `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mBEGIN[0m
+WARNING: Can't mass-assign protected attributes: photo
+  [1m[35mSQL (0.2ms)[0m  ROLLBACK
+  [1m[36mCategory Load (0.3ms)[0m  [1mSELECT `categories`.* FROM `categories`[0m
+Rendered products/_form.html.erb (182.3ms)
+Rendered products/edit.html.erb within layouts/application (189.4ms)
+Completed 200 OK in 267ms (Views: 197.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/products/1" for 127.0.0.1 at 2011-09-01 13:41:00 +0700
+  Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mProduct Load (0.5ms)[0m  [1mSELECT `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[35mCategory Load (0.2ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1
+Rendered products/show.html.erb within layouts/application (61.9ms)
+Completed 200 OK in 115ms (Views: 79.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/photos/medium/missing.png" for 127.0.0.1 at 2011-09-01 13:41:01 +0700
+
+ActionController::RoutingError (No route matches "/photos/medium/missing.png"):
+  
+
+Rendered /home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.2ms)
+
+
+Started GET "/products/1/edit" for 127.0.0.1 at 2011-09-01 13:41:03 +0700
+  Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mProduct Load (0.2ms)[0m  SELECT `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1
+  [1m[36mCategory Load (0.3ms)[0m  [1mSELECT `categories`.* FROM `categories`[0m
+Rendered products/_form.html.erb (198.6ms)
+Rendered products/edit.html.erb within layouts/application (205.6ms)
+Completed 200 OK in 247ms (Views: 214.1ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/products/1" for 127.0.0.1 at 2011-09-01 13:41:10 +0700
+  Processing by ProductsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yz6xLJ5V8QuRrZgJp7BOuHYzoyJJWA/sPOiC6DA+LH4=", "product"=>{"name"=>"san pham 1", "price"=>"2.0", "released_on(1i)"=>"2011", "released_on(2i)"=>"9", "released_on(3i)"=>"1", "category_id"=>"1", "rating"=>"3", "discontinued"=>"1", "photo"=>#<ActionDispatch::Http::UploadedFile:0xb7bac90 @original_filename="fb.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"product[photo]\"; filename=\"fb.jpg\"\r\nContent-Type: image/jpeg\r\n", @tempfile=#<File:/tmp/RackMultipart20110901-3693-1in1au6>>}, "commit"=>"Update Product", "id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+WARNING: Can't mass-assign protected attributes: photo
+  [1m[36mSQL (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35mCategory Load (0.2ms)[0m  SELECT `categories`.* FROM `categories`
+Rendered products/_form.html.erb (186.2ms)
+Rendered products/edit.html.erb within layouts/application (193.3ms)
+Completed 200 OK in 283ms (Views: 207.5ms | ActiveRecord: 0.2ms)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from <top (required)> at /home/kevin/vinova/rails_project/rails30_apps/demo/config/environment.rb:5)
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT `products`.* FROM `products`[0m
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from <top (required)> at /home/kevin/vinova/rails_project/rails30_apps/demo/config/environment.rb:5)
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT `products`.* FROM `products`[0m
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from <top (required)> at /home/kevin/vinova/rails_project/rails30_apps/demo/config/environment.rb:5)
+
+
+Started GET "/products/1" for 127.0.0.1 at 2011-09-01 13:52:03 +0700
+  Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSQL (0.4ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[35mCategory Load (0.2ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1
+Rendered products/show.html.erb within layouts/application (44.1ms)
+Completed 200 OK in 288ms (Views: 90.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/photos/medium/missing.png" for 127.0.0.1 at 2011-09-01 13:52:04 +0700
+
+ActionController::RoutingError (No route matches "/photos/medium/missing.png"):
+  
+
+Rendered /home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.3ms)
+
+
+Started GET "/products/1/edit" for 127.0.0.1 at 2011-09-01 13:52:07 +0700
+  Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mProduct Load (0.2ms)[0m  SELECT `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT `categories`.* FROM `categories`[0m
+Rendered products/_form.html.erb (784.7ms)
+Rendered products/edit.html.erb within layouts/application (791.9ms)
+Completed 200 OK in 832ms (Views: 800.7ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/products/1" for 127.0.0.1 at 2011-09-01 13:52:14 +0700
+  Processing by ProductsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yz6xLJ5V8QuRrZgJp7BOuHYzoyJJWA/sPOiC6DA+LH4=", "product"=>{"name"=>"san pham 1", "price"=>"2.0", "released_on(1i)"=>"2011", "released_on(2i)"=>"9", "released_on(3i)"=>"1", "category_id"=>"1", "rating"=>"3", "discontinued"=>"1", "photo"=>#<ActionDispatch::Http::UploadedFile:0xade984c @original_filename="fb.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"product[photo]\"; filename=\"fb.jpg\"\r\nContent-Type: image/jpeg\r\n", @tempfile=#<File:/tmp/RackMultipart20110901-4764-1vhwx7q>>}, "commit"=>"Update Product", "id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  BEGIN
+WARNING: Can't mass-assign protected attributes: photo
+  [1m[36mSQL (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35mCategory Load (0.3ms)[0m  SELECT `categories`.* FROM `categories`
+Rendered products/_form.html.erb (172.4ms)
+Rendered products/edit.html.erb within layouts/application (179.5ms)
+Completed 200 OK in 349ms (Views: 188.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/products/1" for 127.0.0.1 at 2011-09-01 14:18:57 +0700
+  Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mProduct Load (0.1ms)[0m  SELECT `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+Rendered products/show.html.erb within layouts/application (43.4ms)
+Completed 200 OK in 85ms (Views: 52.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/photos/medium/missing.png" for 127.0.0.1 at 2011-09-01 14:18:57 +0700
+
+ActionController::RoutingError (No route matches "/photos/medium/missing.png"):
+  
+
+Rendered /home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.2ms)
+
+
+Started GET "/products/1/edit" for 127.0.0.1 at 2011-09-01 14:18:59 +0700
+  Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[35mCategory Load (0.1ms)[0m  SELECT `categories`.* FROM `categories`
+Rendered products/_form.html.erb (188.8ms)
+Rendered products/edit.html.erb within layouts/application (195.9ms)
+Completed 200 OK in 293ms (Views: 205.0ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/products/1" for 127.0.0.1 at 2011-09-01 14:19:12 +0700
+  Processing by ProductsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yz6xLJ5V8QuRrZgJp7BOuHYzoyJJWA/sPOiC6DA+LH4=", "product"=>{"name"=>"san pham 1", "price"=>"2.0", "released_on(1i)"=>"2011", "released_on(2i)"=>"9", "released_on(3i)"=>"1", "category_id"=>"1", "rating"=>"3", "discontinued"=>"1", "photo"=>#<ActionDispatch::Http::UploadedFile:0xbb2aac4 @original_filename="wholesaler-banner.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"product[photo]\"; filename=\"wholesaler-banner.png\"\r\nContent-Type: image/png\r\n", @tempfile=#<File:/tmp/RackMultipart20110901-4764-eqloed>>}, "commit"=>"Update Product", "id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mProduct Load (0.1ms)[0m  SELECT `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+WARNING: Can't mass-assign protected attributes: photo
+  [1m[35mSQL (0.2ms)[0m  ROLLBACK
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT `categories`.* FROM `categories`[0m
+Rendered products/_form.html.erb (180.0ms)
+Rendered products/edit.html.erb within layouts/application (187.9ms)
+Completed 200 OK in 259ms (Views: 195.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products/1" for 127.0.0.1 at 2011-09-01 14:21:09 +0700
+  Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[35mCategory Load (0.2ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1
+Rendered products/show.html.erb within layouts/application (48.2ms)
+Completed 200 OK in 90ms (Views: 57.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/photos/medium/missing.png" for 127.0.0.1 at 2011-09-01 14:21:09 +0700
+
+ActionController::RoutingError (No route matches "/photos/medium/missing.png"):
+  
+
+Rendered /home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.2ms)
+
+
+Started GET "/products/1/edit" for 127.0.0.1 at 2011-09-01 14:21:12 +0700
+  Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mProduct Load (0.2ms)[0m  SELECT `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1
+  [1m[36mCategory Load (0.1ms)[0m  [1mSELECT `categories`.* FROM `categories`[0m
+Rendered products/_form.html.erb (201.8ms)
+Rendered products/edit.html.erb within layouts/application (208.7ms)
+Completed 200 OK in 297ms (Views: 217.4ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/products/1" for 127.0.0.1 at 2011-09-01 14:21:18 +0700
+  Processing by ProductsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yz6xLJ5V8QuRrZgJp7BOuHYzoyJJWA/sPOiC6DA+LH4=", "product"=>{"name"=>"san pham 1", "price"=>"2.0", "released_on(1i)"=>"2011", "released_on(2i)"=>"9", "released_on(3i)"=>"1", "category_id"=>"1", "rating"=>"3", "discontinued"=>"1", "photo"=>#<ActionDispatch::Http::UploadedFile:0xbc56b64 @original_filename="banner.bk.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"product[photo]\"; filename=\"banner.bk.png\"\r\nContent-Type: image/png\r\n", @tempfile=#<File:/tmp/RackMultipart20110901-4764-1ynonvk>>}, "commit"=>"Update Product", "id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+WARNING: Can't mass-assign protected attributes: photo
+  [1m[36mSQL (0.1ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/products/1
+Completed 302 Found in 63ms
+
+
+Started GET "/products/1" for 127.0.0.1 at 2011-09-01 14:21:19 +0700
+  Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[35mCategory Load (0.2ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1
+Rendered products/show.html.erb within layouts/application (86.4ms)
+Completed 200 OK in 138ms (Views: 95.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/photos/medium/missing.png" for 127.0.0.1 at 2011-09-01 14:21:19 +0700
+
+ActionController::RoutingError (No route matches "/photos/medium/missing.png"):
+  
+
+Rendered /home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.2ms)
+
+
+Started GET "/products/1" for 127.0.0.1 at 2011-09-01 14:23:20 +0700
+  Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mProduct Load (0.2ms)[0m  SELECT `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1
+  [1m[36mCategory Load (0.5ms)[0m  [1mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+Rendered products/show.html.erb within layouts/application (45.0ms)
+Completed 200 OK in 90ms (Views: 53.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/photos/medium/missing.png" for 127.0.0.1 at 2011-09-01 14:23:20 +0700
+
+ActionController::RoutingError (No route matches "/photos/medium/missing.png"):
+  
+
+Rendered /home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.3ms)
+
+
+Started GET "/products/1/edit" for 127.0.0.1 at 2011-09-01 14:23:22 +0700
+  Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[35mCategory Load (0.1ms)[0m  SELECT `categories`.* FROM `categories`
+Rendered products/_form.html.erb (195.6ms)
+Rendered products/edit.html.erb within layouts/application (203.1ms)
+Completed 200 OK in 289ms (Views: 251.6ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/products/1" for 127.0.0.1 at 2011-09-01 14:23:33 +0700
+  Processing by ProductsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yz6xLJ5V8QuRrZgJp7BOuHYzoyJJWA/sPOiC6DA+LH4=", "product"=>{"name"=>"san pham 1", "price"=>"2.0", "released_on(1i)"=>"2011", "released_on(2i)"=>"9", "released_on(3i)"=>"1", "category_id"=>"1", "rating"=>"3", "discontinued"=>"1", "photo"=>#<ActionDispatch::Http::UploadedFile:0xbe6de98 @original_filename="banner.bk.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"product[photo]\"; filename=\"banner.bk.png\"\r\nContent-Type: image/png\r\n", @tempfile=#<File:/tmp/RackMultipart20110901-4764-1jvoi01>>}, "commit"=>"Update Product", "id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mProduct Load (0.1ms)[0m  SELECT `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+WARNING: Can't mass-assign protected attributes: photo
+  [1m[35mSQL (0.2ms)[0m  COMMIT
+Redirected to http://localhost:3000/products/1
+Completed 302 Found in 62ms
+
+
+Started GET "/products/1" for 127.0.0.1 at 2011-09-01 14:23:33 +0700
+  Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mProduct Load (0.1ms)[0m  SELECT `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+Rendered products/show.html.erb within layouts/application (90.7ms)
+Completed 200 OK in 132ms (Views: 99.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/photos/medium/missing.png" for 127.0.0.1 at 2011-09-01 14:23:33 +0700
+
+ActionController::RoutingError (No route matches "/photos/medium/missing.png"):
+  
+
+Rendered /home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.2ms)
+
+
+Started GET "/products/1/edit" for 127.0.0.1 at 2011-09-01 14:24:03 +0700
+  Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[35mCategory Load (0.2ms)[0m  SELECT `categories`.* FROM `categories`
+Rendered products/_form.html.erb (206.1ms)
+Rendered products/edit.html.erb within layouts/application (213.5ms)
+Completed 200 OK in 253ms (Views: 222.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2011-09-01 16:55:54 +0700
+  Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT `products`.* FROM `products`[0m
+  [1m[35mCategory Load (0.1ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered products/index.html.erb within layouts/application (119.3ms)
+Completed 200 OK in 129ms (Views: 127.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/products/new" for 127.0.0.1 at 2011-09-01 16:55:56 +0700
+  Processing by ProductsController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT `categories`.* FROM `categories`[0m
+Rendered products/_form.html.erb (248.7ms)
+Rendered products/new.html.erb within layouts/application (255.2ms)
+Completed 200 OK in 305ms (Views: 264.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/products/new" for 127.0.0.1 at 2011-09-01 17:09:59 +0700
+  Processing by ProductsController#new as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mCategory Load (0.1ms)[0m  [1mSELECT `categories`.* FROM `categories`[0m
+Rendered products/_form.html.erb (261.3ms)
+Rendered products/new.html.erb within layouts/application (268.0ms)
+Completed 200 OK in 313ms (Views: 278.0ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/products" for 127.0.0.1 at 2011-09-01 17:10:28 +0700
+  Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yz6xLJ5V8QuRrZgJp7BOuHYzoyJJWA/sPOiC6DA+LH4=", "product"=>{"name"=>"product 1", "price"=>"4", "released_on(1i)"=>"2011", "released_on(2i)"=>"9", "released_on(3i)"=>"1", "category_id"=>"1", "discontinued"=>"0", "photo"=>#<ActionDispatch::Http::UploadedFile:0xbd26f1c @original_filename="wholesaler-banner.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"product[photo]\"; filename=\"wholesaler-banner.png\"\r\nContent-Type: image/png\r\n", @tempfile=#<File:/tmp/RackMultipart20110901-4764-1rav7km>>}, "commit"=>"Create Product"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+WARNING: Can't mass-assign protected attributes: photo
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  describe `products`
+  [1m[36mAREL (0.5ms)[0m  [1mINSERT INTO `products` (`name`, `price`, `released_on`, `category_id`, `rating`, `discontinued`, `img_1`, `img_2`, `created_at`, `updated_at`, `photo_file_name`, `photo_content_type`, `photo_file_size`, `photo_updated_at`) VALUES ('product 1', 4, '2011-09-01', 1, NULL, 0, NULL, NULL, '2011-09-01 10:10:28', '2011-09-01 10:10:28', NULL, NULL, NULL, NULL)[0m
+  [1m[35mSQL (11.7ms)[0m  COMMIT
+Redirected to http://localhost:3000/products
+Completed 302 Found in 102ms
+
+
+Started GET "/products" for 127.0.0.1 at 2011-09-01 17:10:28 +0700
+  Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.8ms)[0m  [1mSELECT `products`.* FROM `products`[0m
+  [1m[35mCategory Load (0.2ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered products/index.html.erb within layouts/application (87.4ms)
+Completed 200 OK in 98ms (Views: 95.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/products/2" for 127.0.0.1 at 2011-09-01 17:10:33 +0700
+  Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mProduct Load (0.4ms)[0m  SELECT `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+Rendered products/show.html.erb within layouts/application (44.8ms)
+Completed 200 OK in 144ms (Views: 57.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/photos/medium/missing.png" for 127.0.0.1 at 2011-09-01 17:10:33 +0700
+
+ActionController::RoutingError (No route matches "/photos/medium/missing.png"):
+  
+
+Rendered /home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.3ms)
+
+
+Started GET "/products/2" for 127.0.0.1 at 2011-09-01 17:40:16 +0700
+  Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[35mCategory Load (0.1ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1
+Rendered products/show.html.erb within layouts/application (44.4ms)
+Completed 200 OK in 150ms (Views: 107.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/photos/medium/missing.png" for 127.0.0.1 at 2011-09-01 17:40:16 +0700
+
+ActionController::RoutingError (No route matches "/photos/medium/missing.png"):
+  
+
+Rendered /home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.3ms)
+
+
+Started GET "/products/2/edit" for 127.0.0.1 at 2011-09-01 17:40:20 +0700
+  Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mProduct Load (0.2ms)[0m  SELECT `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT `categories`.* FROM `categories`[0m
+Rendered products/_form.html.erb (200.7ms)
+Rendered products/edit.html.erb within layouts/application (208.1ms)
+Completed 200 OK in 252ms (Views: 218.0ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/products/2" for 127.0.0.1 at 2011-09-01 17:40:27 +0700
+  Processing by ProductsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yz6xLJ5V8QuRrZgJp7BOuHYzoyJJWA/sPOiC6DA+LH4=", "product"=>{"name"=>"product 1", "price"=>"4.0", "released_on(1i)"=>"2011", "released_on(2i)"=>"9", "released_on(3i)"=>"1", "category_id"=>"1", "discontinued"=>"0", "photo"=>#<ActionDispatch::Http::UploadedFile:0xb60c8b98 @original_filename="rails.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"product[photo]\"; filename=\"rails.png\"\r\nContent-Type: image/png\r\n", @tempfile=#<File:/tmp/RackMultipart20110901-4764-2y6wkz>>}, "commit"=>"Update Product", "id"=>"2"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+WARNING: Can't mass-assign protected attributes: photo
+  [1m[36mSQL (0.2ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/products/2
+Completed 302 Found in 66ms
+
+
+Started GET "/products/2" for 127.0.0.1 at 2011-09-01 17:40:27 +0700
+  Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[35mCategory Load (0.3ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1
+Rendered products/show.html.erb within layouts/application (91.4ms)
+Completed 200 OK in 133ms (Views: 100.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/photos/medium/missing.png" for 127.0.0.1 at 2011-09-01 17:40:27 +0700
+
+ActionController::RoutingError (No route matches "/photos/medium/missing.png"):
+  
+
+Rendered /home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.2ms)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from <top (required)> at /home/kevin/rails_project/rails30_apps/demo/config/environment.rb:5)
+  [1m[36mSQL (0.5ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mProduct Load (0.5ms)[0m  SELECT `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1
+  [1m[36mProduct Load (0.6ms)[0m  [1mSELECT `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[35mProduct Load (0.6ms)[0m  SELECT `products`.* FROM `products` WHERE `products`.`id` = 3 LIMIT 1
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from <top (required)> at /home/kevin/rails_project/rails30_apps/demo/config/environment.rb:5)
+
+
+Started GET "/" for 127.0.0.1 at 2011-09-05 09:20:42 +0700
+  Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.6ms)[0m  [1mSELECT `products`.* FROM `products`[0m
+  [1m[35mSQL (0.6ms)[0m  SHOW TABLES
+  [1m[36mCategory Load (0.4ms)[0m  [1mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1
+Rendered products/index.html.erb within layouts/application (55.3ms)
+Completed 200 OK in 223ms (Views: 62.5ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/products/1/edit" for 127.0.0.1 at 2011-09-05 09:20:48 +0700
+  Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"1"}
+Completed   in 11ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2011-09-05 09:20:48 +0700
+  Processing by Devise::SessionsController#new as HTML
+Rendered /home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/devise-1.4.2/app/views/devise/shared/_links.erb (2.0ms)
+Rendered /home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/devise-1.4.2/app/views/devise/sessions/new.html.erb within layouts/application (14.7ms)
+Completed 200 OK in 50ms (Views: 23.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2011-09-05 09:20:51 +0700
+  Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vxo+u2UKGOi5iHeQLG1RnZQjKsKDpptALVkdUb2wU4I=", "user"=>{"email"=>"kevin2@vinova.sg", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'kevin2@vinova.sg' LIMIT 1[0m
+Completed   in 38ms
+  Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vxo+u2UKGOi5iHeQLG1RnZQjKsKDpptALVkdUb2wU4I=", "user"=>{"email"=>"kevin2@vinova.sg", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+Rendered /home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/devise-1.4.2/app/views/devise/shared/_links.erb (2.0ms)
+Rendered /home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/devise-1.4.2/app/views/devise/sessions/new.html.erb within layouts/application (13.9ms)
+Completed 200 OK in 184ms (Views: 21.8ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2011-09-05 09:21:02 +0700
+  Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vxo+u2UKGOi5iHeQLG1RnZQjKsKDpptALVkdUb2wU4I=", "user"=>{"email"=>"kevin@vinova.sg", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`email` = 'kevin@vinova.sg' LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.4ms)[0m  UPDATE `users` SET `current_sign_in_at` = '2011-09-05 02:21:02', `sign_in_count` = 2, `updated_at` = '2011-09-05 02:21:02' WHERE `users`.`id` = 1
+  [1m[36mSQL (8.3ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/products/1/edit
+Completed 302 Found in 295ms
+
+
+Started GET "/products/1/edit" for 127.0.0.1 at 2011-09-05 09:21:02 +0700
+  Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[35mCategory Load (0.5ms)[0m  SELECT `categories`.* FROM `categories`
+Rendered products/_form.html.erb (596.3ms)
+Rendered products/edit.html.erb within layouts/application (603.7ms)
+Completed 200 OK in 700ms (Views: 633.4ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/products/1" for 127.0.0.1 at 2011-09-05 09:21:11 +0700
+  Processing by ProductsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vxo+u2UKGOi5iHeQLG1RnZQjKsKDpptALVkdUb2wU4I=", "product"=>{"name"=>"san pham 1", "price"=>"2.0", "released_on(1i)"=>"2011", "released_on(2i)"=>"9", "released_on(3i)"=>"1", "category_id"=>"1", "rating"=>"3", "discontinued"=>"1", "photo"=>#<ActionDispatch::Http::UploadedFile:0xa132194 @original_filename="fb.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"product[photo]\"; filename=\"fb.jpg\"\r\nContent-Type: image/jpeg\r\n", @tempfile=#<File:/tmp/RackMultipart20110905-4070-cjwnat>>}, "commit"=>"Update Product", "id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mProduct Load (0.2ms)[0m  SELECT `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+WARNING: Can't mass-assign protected attributes: photo
+  [1m[35mSQL (0.1ms)[0m  COMMIT
+Redirected to http://localhost:3000/products/1
+Completed 302 Found in 61ms
+
+
+Started GET "/products/1" for 127.0.0.1 at 2011-09-05 09:21:11 +0700
+  Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mProduct Load (0.2ms)[0m  SELECT `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1
+  [1m[36mCategory Load (0.1ms)[0m  [1mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+Rendered products/show.html.erb within layouts/application (83.5ms)
+Completed 200 OK in 124ms (Views: 92.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/photos/medium/missing.png" for 127.0.0.1 at 2011-09-05 09:21:12 +0700
+
+ActionController::RoutingError (No route matches "/photos/medium/missing.png"):
+  
+
+Rendered /home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (3.5ms)
+
+
+Started GET "/products/1/edit" for 127.0.0.1 at 2011-09-05 09:27:03 +0700
+  Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[35mCategory Load (0.1ms)[0m  SELECT `categories`.* FROM `categories`
+Rendered products/_form.html.erb (229.9ms)
+Rendered products/edit.html.erb within layouts/application (237.0ms)
+Completed 200 OK in 282ms (Views: 245.3ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/products/1" for 127.0.0.1 at 2011-09-05 09:27:09 +0700
+  Processing by ProductsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vxo+u2UKGOi5iHeQLG1RnZQjKsKDpptALVkdUb2wU4I=", "product"=>{"name"=>"san pham 1", "price"=>"2.0", "released_on(1i)"=>"2011", "released_on(2i)"=>"9", "released_on(3i)"=>"1", "category_id"=>"1", "rating"=>"3", "discontinued"=>"1", "photo"=>#<ActionDispatch::Http::UploadedFile:0x9ff0290 @original_filename="fb.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"product[photo]\"; filename=\"fb.jpg\"\r\nContent-Type: image/jpeg\r\n", @tempfile=#<File:/tmp/RackMultipart20110905-4070-1iml8js>>}, "commit"=>"Update Product", "id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mProduct Load (0.2ms)[0m  SELECT `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+WARNING: Can't mass-assign protected attributes: photo
+  [1m[35mSQL (0.1ms)[0m  COMMIT
+Redirected to http://localhost:3000/products/1
+Completed 302 Found in 67ms
+
+
+Started GET "/products/1" for 127.0.0.1 at 2011-09-05 09:27:09 +0700
+  Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mProduct Load (0.1ms)[0m  SELECT `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1
+  [1m[36mCategory Load (0.1ms)[0m  [1mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+Rendered products/show.html.erb within layouts/application (42.4ms)
+Completed 200 OK in 83ms (Views: 51.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/photos/medium/missing.png" for 127.0.0.1 at 2011-09-05 09:27:10 +0700
+
+ActionController::RoutingError (No route matches "/photos/medium/missing.png"):
+  
+
+Rendered /home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.2ms)
+
+
+Started GET "/products/1/comments" for 127.0.0.1 at 2011-09-05 09:27:14 +0700
+  Processing by CommentsController#index as HTML
+  Parameters: {"product_id"=>"1"}
+  [1m[35mProduct Load (0.2ms)[0m  SELECT `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered comments/_form.html.erb (3.1ms)
+  [1m[35mSQL (0.5ms)[0m  SELECT COUNT(*) FROM `comments` WHERE (`comments`.product_id = 1)
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT `comments`.* FROM `comments` WHERE (`comments`.product_id = 1) ORDER BY created_at DESC[0m
+Rendered collection (0.0ms)
+Rendered comments/index.html.erb within layouts/application (17.4ms)
+Completed 200 OK in 91ms (Views: 25.8ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/products/1/comments" for 127.0.0.1 at 2011-09-05 09:34:14 +0700
+  Processing by CommentsController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vxo+u2UKGOi5iHeQLG1RnZQjKsKDpptALVkdUb2wU4I=", "comment"=>{"content"=>"fdfaf dfafd f", "user_id"=>"1"}, "commit"=>"Add comment", "product_id"=>"1"}
+  [1m[35mProduct Load (0.2ms)[0m  SELECT `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  describe `comments`
+  [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO `comments` (`content`, `user_id`, `product_id`, `created_at`, `updated_at`) VALUES ('fdfaf dfafd f', 1, 1, '2011-09-05 02:34:14', '2011-09-05 02:34:14')[0m
+  [1m[35mSQL (11.5ms)[0m  COMMIT
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT COUNT(*) FROM `comments` WHERE (`comments`.product_id = 1)[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered comments/_comment.html.erb (37.0ms)
+Rendered comments/create.js.erb (54.0ms)
+Completed 200 OK in 142ms (Views: 84.8ms | ActiveRecord: 13.8ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2011-09-05 09:34:17 +0700
+  Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT `products`.* FROM `products`[0m
+  [1m[35mCategory Load (0.1ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered products/index.html.erb within layouts/application (119.1ms)
+Completed 200 OK in 129ms (Views: 127.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/products/1/edit" for 127.0.0.1 at 2011-09-05 09:41:56 +0700
+  Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mProduct Load (0.1ms)[0m  SELECT `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT `categories`.* FROM `categories`[0m
+Rendered products/_form.html.erb (191.4ms)
+Rendered products/edit.html.erb within layouts/application (199.2ms)
+Completed 200 OK in 247ms (Views: 208.7ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/products/1" for 127.0.0.1 at 2011-09-05 09:42:05 +0700
+  Processing by ProductsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vxo+u2UKGOi5iHeQLG1RnZQjKsKDpptALVkdUb2wU4I=", "product"=>{"name"=>"san pham 1", "price"=>"2.0", "released_on(1i)"=>"2011", "released_on(2i)"=>"9", "released_on(3i)"=>"1", "category_id"=>"1", "rating"=>"3", "discontinued"=>"1", "photo"=>#<ActionDispatch::Http::UploadedFile:0xa8cf3c0 @original_filename="fb.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"product[photo]\"; filename=\"fb.jpg\"\r\nContent-Type: image/jpeg\r\n", @tempfile=#<File:/tmp/RackMultipart20110905-4070-m3a2sq>>}, "commit"=>"Update Product", "id"=>"1"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+WARNING: Can't mass-assign protected attributes: photo
+  [1m[36mSQL (0.2ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/products/1
+Completed 302 Found in 61ms
+
+
+Started GET "/products/1" for 127.0.0.1 at 2011-09-05 09:42:05 +0700
+  Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[35mCategory Load (0.1ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1
+Rendered products/show.html.erb within layouts/application (87.5ms)
+Completed 200 OK in 127ms (Views: 96.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/photos/medium/missing.png" for 127.0.0.1 at 2011-09-05 09:42:05 +0700
+
+ActionController::RoutingError (No route matches "/photos/medium/missing.png"):
+  
+
+Rendered /home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.2ms)
+
+
+Started GET "/products/1" for 127.0.0.1 at 2011-09-05 15:42:12 +0700
+  Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mProduct Load (0.2ms)[0m  SELECT `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+Rendered products/show.html.erb within layouts/application (87.7ms)
+Completed 200 OK in 131ms (Views: 96.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/photos/medium/missing.png" for 127.0.0.1 at 2011-09-05 15:42:12 +0700
+
+ActionController::RoutingError (No route matches "/photos/medium/missing.png"):
+  
+
+Rendered /home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.2ms)
+
+
+Started GET "/products/1/edit" for 127.0.0.1 at 2011-09-05 15:42:16 +0700
+  Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[35mCategory Load (0.2ms)[0m  SELECT `categories`.* FROM `categories`
+Rendered products/_form.html.erb (178.5ms)
+Rendered products/edit.html.erb within layouts/application (185.4ms)
+Completed 200 OK in 267ms (Views: 193.7ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/products/1" for 127.0.0.1 at 2011-09-05 15:42:23 +0700
+  Processing by ProductsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vxo+u2UKGOi5iHeQLG1RnZQjKsKDpptALVkdUb2wU4I=", "product"=>{"name"=>"san pham 1", "price"=>"2.0", "released_on(1i)"=>"2011", "released_on(2i)"=>"9", "released_on(3i)"=>"1", "category_id"=>"1", "rating"=>"3", "discontinued"=>"1", "photo"=>#<ActionDispatch::Http::UploadedFile:0xa5ba284 @original_filename="fb.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"product[photo]\"; filename=\"fb.jpg\"\r\nContent-Type: image/jpeg\r\n", @tempfile=#<File:/tmp/RackMultipart20110905-4070-13hzip>>}, "commit"=>"Update Product", "id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mProduct Load (0.2ms)[0m  SELECT `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+WARNING: Can't mass-assign protected attributes: photo
+  [1m[35mSQL (0.2ms)[0m  COMMIT
+Redirected to http://localhost:3000/products/1
+Completed 302 Found in 59ms
+
+
+Started GET "/products/1" for 127.0.0.1 at 2011-09-05 15:42:23 +0700
+  Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mProduct Load (0.2ms)[0m  SELECT `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1
+  [1m[36mCategory Load (0.1ms)[0m  [1mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+Rendered products/show.html.erb within layouts/application (42.7ms)
+Completed 200 OK in 85ms (Views: 52.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/photos/medium/missing.png" for 127.0.0.1 at 2011-09-05 15:42:23 +0700
+
+ActionController::RoutingError (No route matches "/photos/medium/missing.png"):
+  
+
+Rendered /home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.2ms)
+  [1m[35mProduct Load (0.3ms)[0m  SELECT `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1
+
+
+Started GET "/products/1/comments" for 127.0.0.1 at 2011-09-05 15:57:35 +0700
+  Processing by CommentsController#index as HTML
+  Parameters: {"product_id"=>"1"}
+  [1m[35mProduct Load (0.1ms)[0m  SELECT `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered comments/_form.html.erb (5.0ms)
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM `comments` WHERE (`comments`.product_id = 1)
+  [1m[36mComment Load (0.5ms)[0m  [1mSELECT `comments`.* FROM `comments` WHERE (`comments`.product_id = 1) ORDER BY created_at DESC[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered comments/_comment.html.erb (15.0ms)
+Rendered comments/index.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 110ms (Views: 43.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2011-09-05 15:57:38 +0700
+  Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT `products`.* FROM `products`[0m
+  [1m[35mCategory Load (0.2ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered products/index.html.erb within layouts/application (137.2ms)
+Completed 200 OK in 147ms (Views: 145.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/products/new" for 127.0.0.1 at 2011-09-05 15:57:40 +0700
+  Processing by ProductsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mCategory Load (0.2ms)[0m  SELECT `categories`.* FROM `categories`
+Rendered products/_form.html.erb (226.9ms)
+Rendered products/new.html.erb within layouts/application (233.4ms)
+Completed 200 OK in 275ms (Views: 243.1ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/products" for 127.0.0.1 at 2011-09-05 15:57:58 +0700
+  Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vxo+u2UKGOi5iHeQLG1RnZQjKsKDpptALVkdUb2wU4I=", "product"=>{"name"=>"product 1", "price"=>"3", "released_on(1i)"=>"2011", "released_on(2i)"=>"9", "released_on(3i)"=>"5", "category_id"=>"1", "rating"=>"3", "discontinued"=>"1", "photo"=>#<ActionDispatch::Http::UploadedFile:0xa9cf108 @original_filename="fb.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"product[photo]\"; filename=\"fb.jpg\"\r\nContent-Type: image/jpeg\r\n", @tempfile=#<File:/tmp/RackMultipart20110905-4070-j8ss74>>}, "commit"=>"Create Product"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+WARNING: Can't mass-assign protected attributes: photo
+  [1m[35mSQL (0.2ms)[0m  BEGIN
+  [1m[36mSQL (1.2ms)[0m  [1mdescribe `products`[0m
+  [1m[35mAREL (0.5ms)[0m  INSERT INTO `products` (`name`, `price`, `released_on`, `category_id`, `rating`, `discontinued`, `img_1`, `img_2`, `created_at`, `updated_at`, `photo_file_name`, `photo_content_type`, `photo_file_size`, `photo_updated_at`) VALUES ('product 1', 3, '2011-09-05', 1, 3, 1, NULL, NULL, '2011-09-05 08:57:58', '2011-09-05 08:57:58', NULL, NULL, NULL, NULL)
+  [1m[36mSQL (12.5ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/products
+Completed 302 Found in 87ms
+
+
+Started GET "/products" for 127.0.0.1 at 2011-09-05 15:57:58 +0700
+  Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.5ms)[0m  SELECT `products`.* FROM `products`
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered products/index.html.erb within layouts/application (134.3ms)
+Completed 200 OK in 145ms (Views: 142.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/products/3" for 127.0.0.1 at 2011-09-05 15:58:01 +0700
+  Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mProduct Load (0.5ms)[0m  SELECT `products`.* FROM `products` WHERE `products`.`id` = 3 LIMIT 1
+  [1m[36mCategory Load (0.1ms)[0m  [1mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+Rendered products/show.html.erb within layouts/application (97.2ms)
+Completed 200 OK in 139ms (Views: 106.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/photos/medium/missing.png" for 127.0.0.1 at 2011-09-05 15:58:01 +0700
+
+ActionController::RoutingError (No route matches "/photos/medium/missing.png"):
+  
+
+Rendered /home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.2ms)
+
+
+Started GET "/products/3/edit" for 127.0.0.1 at 2011-09-05 16:06:12 +0700
+  Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT `products`.* FROM `products` WHERE `products`.`id` = 3 LIMIT 1[0m
+  [1m[35mCategory Load (0.1ms)[0m  SELECT `categories`.* FROM `categories`
+Rendered products/_form.html.erb (191.1ms)
+Rendered products/edit.html.erb within layouts/application (198.3ms)
+Completed 200 OK in 244ms (Views: 207.2ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/products/3" for 127.0.0.1 at 2011-09-05 16:06:18 +0700
+  Processing by ProductsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vxo+u2UKGOi5iHeQLG1RnZQjKsKDpptALVkdUb2wU4I=", "product"=>{"name"=>"product 1", "price"=>"3.0", "released_on(1i)"=>"2011", "released_on(2i)"=>"9", "released_on(3i)"=>"5", "category_id"=>"1", "rating"=>"3", "discontinued"=>"1", "photo"=>#<ActionDispatch::Http::UploadedFile:0xaba2cc8 @original_filename="fb.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"product[photo]\"; filename=\"fb.jpg\"\r\nContent-Type: image/jpeg\r\n", @tempfile=#<File:/tmp/RackMultipart20110905-4070-pvjkg5>>}, "commit"=>"Update Product", "id"=>"3"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mProduct Load (0.2ms)[0m  SELECT `products`.* FROM `products` WHERE `products`.`id` = 3 LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mBEGIN[0m
+WARNING: Can't mass-assign protected attributes: photo
+  [1m[35mSQL (0.2ms)[0m  COMMIT
+Redirected to http://localhost:3000/products/3
+Completed 302 Found in 67ms
+
+
+Started GET "/products/3" for 127.0.0.1 at 2011-09-05 16:06:18 +0700
+  Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mProduct Load (0.2ms)[0m  SELECT `products`.* FROM `products` WHERE `products`.`id` = 3 LIMIT 1
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+Rendered products/show.html.erb within layouts/application (99.1ms)
+Completed 200 OK in 140ms (Views: 107.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/photos/medium/missing.png" for 127.0.0.1 at 2011-09-05 16:06:19 +0700
+
+ActionController::RoutingError (No route matches "/photos/medium/missing.png"):
+  
+
+Rendered /home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.2ms)
+
+
+Started GET "/products/3" for 127.0.0.1 at 2011-09-05 16:08:41 +0700
+  Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT `products`.* FROM `products` WHERE `products`.`id` = 3 LIMIT 1[0m
+  [1m[35mCategory Load (0.2ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1
+Rendered products/show.html.erb within layouts/application (42.3ms)
+Completed 200 OK in 85ms (Views: 52.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/photos/normal/missing.png" for 127.0.0.1 at 2011-09-05 16:08:41 +0700
+
+ActionController::RoutingError (No route matches "/photos/normal/missing.png"):
+  
+
+Rendered /home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.3ms)
+
+
+Started GET "/products/3" for 127.0.0.1 at 2011-09-05 16:08:43 +0700
+  Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mProduct Load (0.1ms)[0m  SELECT `products`.* FROM `products` WHERE `products`.`id` = 3 LIMIT 1
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+Rendered products/show.html.erb within layouts/application (88.2ms)
+Completed 200 OK in 128ms (Views: 96.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/photos/normal/missing.png" for 127.0.0.1 at 2011-09-05 16:08:43 +0700
+
+ActionController::RoutingError (No route matches "/photos/normal/missing.png"):
+  
+
+Rendered /home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (7.2ms)
+
+
+Started GET "/products/3/edit" for 127.0.0.1 at 2011-09-05 16:08:45 +0700
+  Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT `products`.* FROM `products` WHERE `products`.`id` = 3 LIMIT 1[0m
+  [1m[35mCategory Load (0.1ms)[0m  SELECT `categories`.* FROM `categories`
+Rendered products/_form.html.erb (192.7ms)
+Rendered products/edit.html.erb within layouts/application (200.1ms)
+Completed 200 OK in 250ms (Views: 209.9ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/products/3" for 127.0.0.1 at 2011-09-05 16:08:51 +0700
+  Processing by ProductsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vxo+u2UKGOi5iHeQLG1RnZQjKsKDpptALVkdUb2wU4I=", "product"=>{"name"=>"product 1", "price"=>"3.0", "released_on(1i)"=>"2011", "released_on(2i)"=>"9", "released_on(3i)"=>"5", "category_id"=>"1", "rating"=>"3", "discontinued"=>"1", "photo"=>#<ActionDispatch::Http::UploadedFile:0xa824bc8 @original_filename="fb.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"product[photo]\"; filename=\"fb.jpg\"\r\nContent-Type: image/jpeg\r\n", @tempfile=#<File:/tmp/RackMultipart20110905-4070-15cmnbb>>}, "commit"=>"Update Product", "id"=>"3"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mProduct Load (0.1ms)[0m  SELECT `products`.* FROM `products` WHERE `products`.`id` = 3 LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+WARNING: Can't mass-assign protected attributes: photo
+  [1m[35mSQL (0.2ms)[0m  COMMIT
+Redirected to http://localhost:3000/products/3
+Completed 302 Found in 127ms
+
+
+Started GET "/products/3" for 127.0.0.1 at 2011-09-05 16:08:51 +0700
+  Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mProduct Load (0.2ms)[0m  SELECT `products`.* FROM `products` WHERE `products`.`id` = 3 LIMIT 1
+  [1m[36mCategory Load (0.1ms)[0m  [1mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+Rendered products/show.html.erb within layouts/application (46.8ms)
+Completed 200 OK in 86ms (Views: 55.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/photos/normal/missing.png" for 127.0.0.1 at 2011-09-05 16:08:51 +0700
+
+ActionController::RoutingError (No route matches "/photos/normal/missing.png"):
+  
+
+Rendered /home/kevin/.rvm/gems/ruby-1.9.2-p290@rails3.0/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.2ms)
+
+
+Started GET "/products/3/edit" for 127.0.0.1 at 2011-09-05 16:10:35 +0700
+  Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT `products`.* FROM `products` WHERE `products`.`id` = 3 LIMIT 1[0m
+  [1m[35mCategory Load (0.3ms)[0m  SELECT `categories`.* FROM `categories`
+Rendered products/_form.html.erb (190.5ms)
+Rendered products/edit.html.erb within layouts/application (197.7ms)
+Completed 200 OK in 247ms (Views: 213.3ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/products/3" for 127.0.0.1 at 2011-09-05 16:10:41 +0700
+  Processing by ProductsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vxo+u2UKGOi5iHeQLG1RnZQjKsKDpptALVkdUb2wU4I=", "product"=>{"name"=>"product 1", "price"=>"3.0", "released_on(1i)"=>"2011", "released_on(2i)"=>"9", "released_on(3i)"=>"5", "category_id"=>"1", "rating"=>"3", "discontinued"=>"1", "photo"=>#<ActionDispatch::Http::UploadedFile:0xa787af8 @original_filename="fb.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"product[photo]\"; filename=\"fb.jpg\"\r\nContent-Type: image/jpeg\r\n", @tempfile=#<File:/tmp/RackMultipart20110905-4070-1lkp1de>>}, "commit"=>"Update Product", "id"=>"3"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mProduct Load (0.2ms)[0m  SELECT `products`.* FROM `products` WHERE `products`.`id` = 3 LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.6ms)[0m  UPDATE `products` SET `photo_file_name` = 'fb.jpg', `photo_content_type` = 'image/jpeg', `photo_file_size` = 3581, `photo_updated_at` = '2011-09-05 09:10:41', `updated_at` = '2011-09-05 09:10:41' WHERE `products`.`id` = 3
+  [1m[36mSQL (8.9ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/products/3
+Completed 302 Found in 180ms
+
+
+Started GET "/products/3" for 127.0.0.1 at 2011-09-05 16:10:41 +0700
+  Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mProduct Load (0.5ms)[0m  [1mSELECT `products`.* FROM `products` WHERE `products`.`id` = 3 LIMIT 1[0m
+  [1m[35mCategory Load (0.2ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1
+Rendered products/show.html.erb within layouts/application (105.0ms)
+Completed 200 OK in 153ms (Views: 115.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/products/3" for 127.0.0.1 at 2011-09-05 16:10:51 +0700
+  Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mProduct Load (0.2ms)[0m  SELECT `products`.* FROM `products` WHERE `products`.`id` = 3 LIMIT 1
+  [1m[36mCategory Load (0.1ms)[0m  [1mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+Rendered products/show.html.erb within layouts/application (46.6ms)
+Completed 200 OK in 88ms (Views: 56.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2011-09-05 16:13:45 +0700
+  Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.4ms)[0m  SELECT `products`.* FROM `products`
+  [1m[36mCategory Load (0.1ms)[0m  [1mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered products/index.html.erb within layouts/application (132.9ms)
+Completed 200 OK in 143ms (Views: 140.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/products/2/edit" for 127.0.0.1 at 2011-09-05 16:13:50 +0700
+  Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mProduct Load (0.4ms)[0m  SELECT `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1
+  [1m[36mCategory Load (0.1ms)[0m  [1mSELECT `categories`.* FROM `categories`[0m
+Rendered products/_form.html.erb (199.7ms)
+Rendered products/edit.html.erb within layouts/application (207.1ms)
+Completed 200 OK in 247ms (Views: 215.6ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/products/2" for 127.0.0.1 at 2011-09-05 16:13:56 +0700
+  Processing by ProductsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vxo+u2UKGOi5iHeQLG1RnZQjKsKDpptALVkdUb2wU4I=", "product"=>{"name"=>"product 1", "price"=>"4.0", "released_on(1i)"=>"2011", "released_on(2i)"=>"9", "released_on(3i)"=>"1", "category_id"=>"1", "discontinued"=>"0", "photo"=>#<ActionDispatch::Http::UploadedFile:0x9ad0e90 @original_filename="fb.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"product[photo]\"; filename=\"fb.jpg\"\r\nContent-Type: image/jpeg\r\n", @tempfile=#<File:/tmp/RackMultipart20110905-4070-o3uj80>>}, "commit"=>"Update Product", "id"=>"2"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  BEGIN
+  [1m[36mAREL (0.5ms)[0m  [1mUPDATE `products` SET `photo_file_name` = 'fb.jpg', `photo_content_type` = 'image/jpeg', `photo_file_size` = 3581, `photo_updated_at` = '2011-09-05 09:13:56', `updated_at` = '2011-09-05 09:13:56' WHERE `products`.`id` = 2[0m
+  [1m[35mSQL (7.6ms)[0m  COMMIT
+Redirected to http://localhost:3000/products/2
+Completed 302 Found in 139ms
+
+
+Started GET "/products/2" for 127.0.0.1 at 2011-09-05 16:13:56 +0700
+  Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mProduct Load (0.5ms)[0m  SELECT `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+Rendered products/show.html.erb within layouts/application (101.1ms)
+Completed 200 OK in 143ms (Views: 109.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/products/2/edit" for 127.0.0.1 at 2011-09-05 16:14:00 +0700
+  Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[35mCategory Load (0.1ms)[0m  SELECT `categories`.* FROM `categories`
+Rendered products/_form.html.erb (217.0ms)
+Rendered products/edit.html.erb within layouts/application (224.6ms)
+Completed 200 OK in 271ms (Views: 233.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/products/2" for 127.0.0.1 at 2011-09-05 16:14:19 +0700
+  Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mProduct Load (0.2ms)[0m  SELECT `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1
+  [1m[36mCategory Load (0.1ms)[0m  [1mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+Rendered products/show.html.erb within layouts/application (44.8ms)
+Completed 200 OK in 86ms (Views: 53.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/products/2/comments" for 127.0.0.1 at 2011-09-05 16:14:24 +0700
+  Processing by CommentsController#index as HTML
+  Parameters: {"product_id"=>"2"}
+  [1m[35mProduct Load (0.2ms)[0m  SELECT `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered comments/_form.html.erb (2.9ms)
+  [1m[35mSQL (0.6ms)[0m  SELECT COUNT(*) FROM `comments` WHERE (`comments`.product_id = 2)
+  [1m[36mComment Load (0.5ms)[0m  [1mSELECT `comments`.* FROM `comments` WHERE (`comments`.product_id = 2) ORDER BY created_at DESC[0m
+Rendered collection (0.0ms)
+Rendered comments/index.html.erb within layouts/application (17.7ms)
+Completed 200 OK in 154ms (Views: 25.6ms | ActiveRecord: 1.5ms)
+
+
+Started POST "/products/2/comments" for 127.0.0.1 at 2011-09-05 16:14:28 +0700
+  Processing by CommentsController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vxo+u2UKGOi5iHeQLG1RnZQjKsKDpptALVkdUb2wU4I=", "comment"=>{"content"=>"dfadf dfa ", "user_id"=>"1"}, "commit"=>"Add comment", "product_id"=>"2"}
+  [1m[35mProduct Load (0.2ms)[0m  SELECT `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  describe `comments`
+  [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO `comments` (`content`, `user_id`, `product_id`, `created_at`, `updated_at`) VALUES ('dfadf dfa ', 1, 2, '2011-09-05 09:14:28', '2011-09-05 09:14:28')[0m
+  [1m[35mSQL (10.1ms)[0m  COMMIT
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT COUNT(*) FROM `comments` WHERE (`comments`.product_id = 2)[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered comments/_comment.html.erb (96.4ms)
+Rendered comments/create.js.erb (100.1ms)
+Completed 200 OK in 174ms (Views: 120.0ms | ActiveRecord: 12.2ms)
+
+
+Started POST "/products/2/comments" for 127.0.0.1 at 2011-09-05 16:14:31 +0700
+  Processing by CommentsController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vxo+u2UKGOi5iHeQLG1RnZQjKsKDpptALVkdUb2wU4I=", "comment"=>{"content"=>"df afadfdf", "user_id"=>"1"}, "commit"=>"Add comment", "product_id"=>"2"}
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mdescribe `comments`[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO `comments` (`content`, `user_id`, `product_id`, `created_at`, `updated_at`) VALUES ('df afadfdf', 1, 2, '2011-09-05 09:14:31', '2011-09-05 09:14:31')
+  [1m[36mSQL (8.7ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT COUNT(*) FROM `comments` WHERE (`comments`.product_id = 2)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered comments/_comment.html.erb (37.9ms)
+Rendered comments/create.js.erb (45.8ms)
+Completed 200 OK in 123ms (Views: 65.9ms | ActiveRecord: 10.6ms)
