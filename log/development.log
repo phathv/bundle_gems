@@ -14524,3 +14524,84 @@ Started POST "/products/2/comments" for 127.0.0.1 at 2011-09-05 16:14:31 +0700
 Rendered comments/_comment.html.erb (37.9ms)
 Rendered comments/create.js.erb (45.8ms)
 Completed 200 OK in 123ms (Views: 65.9ms | ActiveRecord: 10.6ms)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from <top (required)> at /home/kevin/rails_project/rails30_apps/demo/config/environment.rb:5)
+
+
+Started GET "/products" for 127.0.0.1 at 2011-09-05 16:16:54 +0700
+  Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.6ms)[0m  [1mSELECT `products`.* FROM `products`[0m
+  [1m[35mSQL (0.4ms)[0m  SHOW TABLES
+  [1m[36mCategory Load (0.1ms)[0m  [1mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered products/index.html.erb within layouts/application (84.1ms)
+Completed 200 OK in 258ms (Views: 91.2ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/products/2" for 127.0.0.1 at 2011-09-05 16:16:59 +0700
+  Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mProduct Load (0.2ms)[0m  SELECT `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+Rendered products/show.html.erb within layouts/application (78.8ms)
+Completed 200 OK in 125ms (Views: 92.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2011-09-05 16:17:01 +0700
+  Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.1ms)[0m  SELECT `products`.* FROM `products`
+  [1m[36mCategory Load (0.1ms)[0m  [1mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered products/index.html.erb within layouts/application (75.5ms)
+Completed 200 OK in 85ms (Views: 83.6ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/products/2" for 127.0.0.1 at 2011-09-05 16:17:04 +0700
+  Processing by ProductsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"vxo+u2UKGOi5iHeQLG1RnZQjKsKDpptALVkdUb2wU4I=", "id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mProduct Load (0.3ms)[0m  SELECT `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mComment Load (0.6ms)[0m  SELECT `comments`.* FROM `comments` WHERE (`comments`.product_id = 2) ORDER BY created_at DESC
+  [1m[36mAREL (0.2ms)[0m  [1mDELETE FROM `comments` WHERE `comments`.`id` = 3[0m
+  [1m[35mAREL (0.3ms)[0m  DELETE FROM `comments` WHERE `comments`.`id` = 2
+  [1m[36mAREL (0.3ms)[0m  [1mDELETE FROM `products` WHERE `products`.`id` = 2[0m
+  [1m[35mSQL (7.8ms)[0m  COMMIT
+Redirected to http://localhost:3000/products
+Completed 302 Found in 345ms
+
+
+Started GET "/products" for 127.0.0.1 at 2011-09-05 16:17:05 +0700
+  Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.5ms)[0m  [1mSELECT `products`.* FROM `products`[0m
+  [1m[35mCategory Load (0.2ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered products/index.html.erb within layouts/application (133.2ms)
+Completed 200 OK in 143ms (Views: 141.6ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/products/3" for 127.0.0.1 at 2011-09-05 16:17:15 +0700
+  Processing by ProductsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"vxo+u2UKGOi5iHeQLG1RnZQjKsKDpptALVkdUb2wU4I=", "id"=>"3"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mProduct Load (0.3ms)[0m  SELECT `products`.* FROM `products` WHERE `products`.`id` = 3 LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mComment Load (0.5ms)[0m  SELECT `comments`.* FROM `comments` WHERE (`comments`.product_id = 3) ORDER BY created_at DESC
+  [1m[36mAREL (0.3ms)[0m  [1mDELETE FROM `products` WHERE `products`.`id` = 3[0m
+  [1m[35mSQL (8.5ms)[0m  COMMIT
+Redirected to http://localhost:3000/products
+Completed 302 Found in 93ms
+
+
+Started GET "/products" for 127.0.0.1 at 2011-09-05 16:17:15 +0700
+  Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.5ms)[0m  [1mSELECT `products`.* FROM `products`[0m
+  [1m[35mCategory Load (0.2ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered products/index.html.erb within layouts/application (87.8ms)
+Completed 200 OK in 142ms (Views: 139.8ms | ActiveRecord: 0.8ms)
